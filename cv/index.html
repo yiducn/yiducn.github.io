@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Yi Du</title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="display.css">
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="display.js"></script>
+    <script type="text/javascript">
+        $(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                console.log(this);
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+        });
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Yi</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active" ><a href="#">Home</a></li>
+                <li><a href="#education" class="scroll">Education&Employment</a></li>
+                <li><a href="#project" class="scroll">Projects</a></li>
+                <li><a href="#researchproject" class="scroll">Research Projects</a></li>
+                <li><a href="#paper" class="scroll">Publications</a></li>
+                <li><a href="doc/cv.pdf">CV</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+<div class="container" >
+    <div class="jumbotron" id="main">
+        <div class="row">
+            <div class="col-md-3" style="padding-top: 30px"><img src="img/yidu.png" ></div>
+            <div class="col-md-9" style="margin-top: 10px"><h2>Yi Du </h2>
+                <h3>I am an assistant professor of Scitific Data Center (SDC), Computer Network Information Center (CNIC), Chinese Academy of Sciences (CAS).</h3>
+                <h3>My research and development interests focus on Information Visualization (Infovis) and Human Computer Interaction (HCI).</h3>
+            </div>
+        </div>
+        <table class="table" id="education">
+            <tbody>
+            <tr><td>EDUCATION&EMPLEMENT</td><td></td></tr>
+            <tr>
+                <td width="200px" >Jul.2013 - now</td>
+                <td><b>Assistant Professor</b>
+                    Scientific Data Center, <a href="http://www.cnic.cn/">Computer Network Information Center</a>, Chinese Academy of Sciences
+                    <br>Research Interest: Information Visualization, Human Computer Interaction
+                </td>
+            </tr>
+            <tr>
+                <td width="200px" >Sep.2008 - Jul.2013</td>
+                <td><b>Ph.D. Computer Science</b>
+                    <a href="http://www.iscas.ac.cn/">Institute of Software</a>, Chinese Academy of Sciences
+                    <br><i>E-UIDL: A User Interface Description Language on Mobile Computing</i>
+                    <br>Advisor: Guozhong Dai
+                    <br>Committee: Qingyi Hua, Yuanchun Shi, Guoping Wang, Zhiliang Wang, Shiguang Shan
+                </td>
+            </tr>
+            <tr>
+                <td width="200px" >Sep.2004 - Jul.2018</td>
+                <td><b>B.S. Software Engineering</b>
+                    <a href="http://www.cs.sdu.edu.cn/default.do">School of Software</a>, Shandong University
+                    <br><i>Research and Application of Pen Based Graphical Editor Framework</i>
+                    <br>Advisor: Zhongmin Yan, Dongxing Teng
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <table class="table" id="project">
+            <tbody>
+            <tr><td>PROJECTS</td><td></td></tr>
+            <tr>
+                <td width="200px" ><a href="img/proj1.png"><img src="img/proj1_small.png"></a></td>
+                <td><b>Data Visualization Platform(DVIZ)</b>
+                    <br>This is a visualization platform, similar to ManyEyes, but has more functions.
+                    This platform supports more than 9 data format, including 5 file and 4 database.
+                    Further more, it supports create one visualization with two or more charts,
+                    changes of one chart can affect the changes of other charts.
+                    <br><b>Techniques:</b>Java, ECharts, D3.js
+                    <br><b>Demos&Papers:</b><a href="http://www.dviz.cn/dviz">online</a>
+                </td>
+            </tr>
+            <tr>
+                <td width="200px"><a href="img/proj2.png"><img src="img/proj2_small.png"></a></td>
+                <td><b>H7N9 Data Visualization System</b>
+                    <br>Using heatmap and paralle coordinate to visulizing the explosion of H7N9 bird flu.
+                    <br><b>techniques:</b>Java, D3.js
+                    <br><b>Demos&Papers:</b><a href="http://www.dviz.cn/h7n9/en/index.html">online</a>
+                </td>
+            </tr>
+            <tr>
+                <td width="200px"><a href="img/proj3.png"><img src="img/proj3_small.png"></a></td>
+                <td><b>Radiation-hardened Orbit Design Demonstration System</b>
+                    <br>Desc.
+                    <br><b>techniques:</b>Java, WorldWind Java SDK
+                    <br><b>Demos&Papers:</b><a href="screenshot/orbit.png">screenshot1</a>
+                    <a href="screenshot/orbit2.png">screenshot2</a>
+                    <a href="screenshot/orbit3.gif">screenshot3</a>
+                </td>
+            </tr>
+            <tr>
+                <td width="200px"><a href="img/proj4.png"><img src="img/proj4_small.png"></a></td>
+                <td><b>Visualization System of a Food Factory</b>
+                    <br>Desc.
+                    <br><b>techniques:</b>Java, ECharts, MongoDB
+                    <br><b>Demos&Papers:</b>
+                </td>
+            </tr>
+            <tr>
+                <td width="200px"><a href="img/proj5.png"><img src="img/proj5_small.png"></a></td>
+                <td><b>Orbit Data Visualization System</b>
+                    <br>Desc.
+                    <br><b>techniques:</b>Java, WorldWind Java SDK
+                    <br><b>Demos&Papers:</b><a href="screenshot/o1.png">screenshot1</a>
+                    <a href="screenshot/o2.png">screenshot2</a>
+                    <a href="screenshot/o3.png">screenshot3</a>
+                    <a href="screenshot/o4.png">screenshot3</a>
+                </td>
+            </tr>
+            <tr>
+                <td width="200px"><a href="img/proj6.png"><img src="img/proj6_small.png"></a></td>
+                <td><b>The Taxi GPS Visualization System</b>
+                    <br>Desc.
+                    <br><b>techniques:</b>Java, MongoDB, OpenLayers
+                    <br><b>Demos&Papers:</b><a href="screenshot/geo1.png">screenshot1</a>
+                    <a href="screenshot/geo2.png">screenshot2</a>
+                    <a href="screenshot/geo3.png">screenshot3</a>
+                </td>
+            </tr>
+            <tr>
+                <td width="200px"><a href="img/proj7.png"><img src="img/proj7_small.png"></a></td>
+                <td><b>Research on User Interface Description Language under Mobile Environment</b>
+                    <br>Desc.
+                    <br><b>techniques:</b>Java, C
+                    <br><b>Demos&Papers:</b><a href="screenshot/tools.png">toolsScreenshot1</a>
+                    <a href="screenshot/tools2.png">toolsScreenshot2</a>
+                    <a href="screenshot/generated.png">generatedScreenshot1</a>
+                    <a href="screenshot/generated2.png">generatedScreenshot2</a>
+                    <a href="screenshot/generated3.png">generatedScreenshot3</a>
+                    <a href="screenshot/generated4.png">generatedScreenshot4</a>
+                </td>
+            </tr>
+            <tr>
+                <td width="200px"><a href="img/projGephi.png"><img src="img/projGephi_small.png"></a></td>
+                <td><b>Direct Social Network Importer of Gephi</b>
+                    <br>This is a sub project of Google Summer of Code 2010. It is a graph visualization software, and can import, visualize and export graph. Besides these.
+                    My responsibility: Design and implement five data export plugins. These plugins can export data from twitter, facebook and NYT, and convert these data into gephi format.
+                    <br><b>techniques:</b>Java, Netbeans
+                    <br><b>Demos&Papers:</b><a href="screenshot/projGephi2.png">screenshot1</a>
+                    <a href="screenshot/projGephi3.png">screenshot2</a>
+                    <a href="screenshot/projGephi4.png">screenshot3</a>
+                </td>
+            </tr>
+            <tr>
+                <td width="200px"><a href="img/proj8.png"><img src="img/proj8_small.png"></a></td>
+                <td><b>Circle Pack for File System</b>
+                    <br>Desc.
+                    <br><b>techniques:</b>C++,OpenGL
+                    <br><b>Demos&Papers:</b><a href="http://youtu.be/8mTt9-gF_f8">youtube</a>
+                </td>
+            </tr>
+            <tr>
+                <td width="200px"><a href="img/proj10.png"><img src="img/proj10_small.png"></a></td>
+                <td><b>Visual Analytics System for a Company using Daisy</b>
+                    <br>It is a visual analytics system built by Daisy.
+                    <br><b>techniques:</b>Java, RCP, Prefuse
+                    <br><b>Demos&Papers:</b><a href="http://youtu.be/J28WFJgpDac">youtube</a>
+                </td>
+            </tr>
+            <tr>
+                <td width="200px"><a href="img/proj9.png"><img src="img/proj9_small.png"></a></td>
+                <td><b>Daisy</b>
+                    <br>It is a visualization platform for building a visualization quickly.
+                    <br><b>techniques:</b>Java, RCP, Prefuse
+                    <br><b>Demos&Papers:</b><a href="http://youtu.be/52prBamNB0k">youtube</a>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+
+        <!--research project-->
+        <table class="table" id="researchproject">
+            <tbody>
+            <tr><td>RESEARCH PROJECTS</td><td></td></tr>
+            <tr>
+                <td><b>Study on the method of model driven mass space-time data visualization development</b>.
+                    National Natural Science Foundation of China (<b>project leader,2015-2017,260,000RMB</b>)</td>
+            </tr>
+            <tr>
+                <td><b>Research on Metaphor-based Interactive Learning Environment for Children</b>.
+                    National Natural Science Foundation of China (project participants)</td>
+            </tr>
+            <tr>
+                <td><b>By blending pen input document analysis and recognition theory and method of research</b>.
+            National Natural Science Foundation of China (project participants)</td>
+            </tr>
+            <tr>
+                <td><b>Based on the research on man-machine interaction device attributes fusion</b>.
+            National Natural Science Foundation of China (project participants)</td>
+            </tr>
+            <tr>
+                <td><b>Personal information management research for more equipment</b>.
+            National Natural Science Foundation of China (project participants)</td>
+            </tr>
+            <tr>
+                <td><b>For video semantic description and interaction of the sketch interface key technology research</b>.
+            National Natural Science Foundation of China (project participants)</td>
+            </tr>
+            <tr>
+                <td><b>Reality - -based Interaction model and user interface evaluation method research</b>.
+            National Natural Science Foundation of China (project participants)</td>
+            </tr>
+            <tr>
+                <td><b>Based on handwritten equipment on-line handwriting intelligent understanding and interactive technology research</b>.
+            National Natural Science Foundation of China (project participants)</td>
+            </tbody>
+        </table>
+
+        <!--papers-->
+<!--        <nav class="navbar navbar-default" role="navigation" id="paper">
+            <div id="" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#education">Conference Papers</a></li>
+                    <li><a href="#project" >Journal Articles</a></li>
+                    <li><a href="#paper">Papers</a></li>
+                    <li><a href="#education">Contact</a></li>
+                    <li><a href="#cv" >CV</a></li>
+                </ul>
+            </div>
+        </nav>-->
+        <table class="table" id="paper">
+            <tbody>
+                <tr><td>PUBLICATIONS</td><td></td></tr>
+                <tr>
+                    <td width="200px" style="padding-top: 30px;"><b>Journal Articles</b></td>
+                    <td>
+                        <br>Yi Du, Feng Tian,Guozhong Dai, <b>A Development Approach Based on Extensible User Interface Description Language</b>, Journal of Software, 2015.(to appear)<br>
+                        <br>Yi Du, Danhuai Guo, Yuanchun Zhou,Jianhui Li, <b>A Data Processing and Visualization Platform for Large-scale Spatio-temporal Data</b>, Journal of Computer Research and Development, 2015.(to appear)<br>
+                        <br>Lei Ren, Yi Du,Guozhong Dai, <b>Human-Computer Interaction Based on Semantic Focus+Context For Big Data Visualization in Small Interface</b>, Chinese Journal of Computers, 2015.(to appear)<br>
+                        <br>Lei Ren, Yi Du, Shuai Ma,XiaoLong Zhang, <b>Visual Analytics Towards Big Data</b>, Journal of Software, vol. 25, no. 19, pp. 1909-1936, 2013.<br>
+                        <br>Yi Du, Feng Tian, Cuixia Ma,Guozhong Dai, <b>A User Interface Generation Framework Based on Multi-scale Description Method</b>, Chinese Journal of Computers, vol. 36, no. 11, pp. 2179-2190, 2013.<br>
+                        <br>Yi Du,Lei Ren, <b>DaisyVA:An Intelligent Interactive Visualization Platform for Visual Analysis of Multi-Facet Information</b>, Journal of Computer-Aided Design & Computer Graphics, vol. 25, no. 8, pp. 1177-1182, 2013.<br>
+                        <br>Yi Du, Changzhi Deng, Feng Tian,Guozhong Dai, <b>Extensible user interface description language</b>, Journal of Software, vol. 24, no. 5, pp. 1127-1142, 2013.<br>
+                        <br>Yi Du, Fei Lv, Feng Tian, Wenjun Hou, Cuixia Ma,Guozhong Dai, <b>Sketch-Based interface for creation and visual representation of hyper videos</b>, Journal of Software, vol. 24, no. Suppl.(2), pp. 32-41, 2013.<br>
+                        <br>Yi Du, Feng Tian, Guozhong Dai, Feng Wang,Hongan Wang, <b>A User Model Based on Mobile Environment</b>, Journal of Software, vol. 22, pp. 120-128, 2011.<br>
+                        <br>Yi Du, Cuixia Ma, Dongxing Teng,Guozhong Dai, <a href="doc/CONCEPT-SKETCH_2010.pdf"><b>CONCEPT-SKETCH: A Tool for Cooperative Visual Analytics</b></a>, International Journal of Advanced Intelligence (IJAI), vol. 3, no. 1, pp. 95-113, 2011.<br>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200px" style="padding-top: 30px;"><b>Conference Papers/Posters</b></td>
+                    <td>
+                        <br>Lei Ren,Yi Du, <a href="doc/sketch-fisheyes_2014.pdf"><b>A Sketch+Fisheye Interface for Visual Analytics of Large Time-Series</b></a> (Poster), in IEEE Symposium on Visual Analytics Science and Technology (VAST) 2014, Paris, France, 2014, pp. 265-266.<br>
+                        <br>Lei Ren, Jin Cui, Yi Du,Guozhong Dai, <a href="doc/Multilevel_2013.pdf"><b>Multilevel Interaction Model For Hierarchical Tasks In Information Visualization</b></a>,
+                        in The 6th International Symposium on Visual Information Communication and Interaction (VINCI 2013) Tianjin, China, 2013, pp. 11-16.<br>
+                        <br>Yingying Jiang, Feng Tian, Guang Li, Xiaolong (Luke) Zhang, Yi Du, Guozhong Dai,Hongan Wang, <b>SpeechTouch: Precise Cursor Positioning on Touch Screen Mobiles</b>,
+                        in 15th International Conference on Human-Computer Interaction with Mobile Devices and Services (MobileHCI 2013), Munich, 2013.<br>
+                        <br>Yi Du, Cuixia Ma, Dongxing Teng,Guozhong Dai, <b>Cooperative Concept Map Based on Cognitive Model for Visual Analysis</b>, in The 3rd Visual Information Communication - International Symposium (VINCI 2010), Beijing, China, 2010, pp. 76-83.<br>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200px" style="padding-top: 30px;"><b>Thesis</b></td>
+                    <td>
+                       <br> Yi Du, <b>E-UIDL: A User Interface Description Language on Mobile Computing</b>, Doctor's Thesis, Chinese Academy of Sciences, China, 2013<br>
+                        <br>Yi Du, <b>Research and Application of a Pen Based Graphical Editor Framework</b>, Bachelor's Thesis, Shandong University, China, 2008.<br>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200px" style="padding-top: 30px;"><b>Book Chapters</b></td>
+                    <td>
+                        <br> Guozhong Dai,Feng Tian, <b>Pen Based User Interface (2nd Edition)</b>. Press of University of Science and Technology of China, 2014. Chapter 6 & 7.<br>
+                        <br>
+                    </td>
+                </tr>
+
+
+            </tbody>
+        </table>
+</div>
+</div>
+</body>
+</html>
