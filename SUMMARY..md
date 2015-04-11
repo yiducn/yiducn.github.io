@@ -1,4 +1,4 @@
 # Summary
 
-* [Chapter1](chapter1.md)
+* [Chapter1](infovisGallary/chapter1.md)
 
