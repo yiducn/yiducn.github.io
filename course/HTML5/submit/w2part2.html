@@ -1,0 +1,38 @@
+<html>
+<header>
+  <meta charset="utf-8">
+</header>
+<body id="body">
+  <script>
+  var color = ["blue", "green", "gold", "gray", "orange", "red", "white"];
+  var thinking_color = Math.floor(Math.random()*color.length);
+  var countTries = 0;
+  function do_game(){
+    input_color = prompt("I am thinking one of those colors:\n\n"
+      +color.join() +"\n\n"+
+    "What color am I thinking?");
+    check_guess(input_color);
+  }
+  function check_guess(input_color){
+    countTries++;
+    if(color.indexOf(input_color) == -1){
+      alert("Sorry I don't recognize your color, try again.");
+      do_game();
+    }else if(thinking_color == color.indexOf(input_color)){
+      var myBody=document.getElementsByTagName("body")[0];
+      myBody.style.background=color[thinking_color];
+      alert("Congratulations!\n You took " + countTries +" guesses");
+    }else if(thinking_color > color.indexOf(input_color)){
+      alert("Your input is alphabetically lower than mine!\nPlease try again!");
+      do_game();
+    }else{
+      alert("Your input is alphabetically higher than mine!\nPlease try again!");
+      do_game();
+    }
+  }
+
+  do_game();
+
+  </script>
+</body>
+</html>

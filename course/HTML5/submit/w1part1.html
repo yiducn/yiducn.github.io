@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h1>Please Enter Your Details For Our Dating Website!</h1>
+  <form>
+  <fieldset >
+    <legend>Your Face</legend>
+    <label for="image">Your image:</label>
+    <input id="image" type="file" required><br>
+    <label for="preview">Image preview:</label>
+    <img id="preview">
+  </fieldset>
+<fieldset>
+  <legend>Your General Details</legend>
+  <label for="name">Name:</label>
+  <input id="name" type="text" required><br>
+  <label>Gender:</label>
+  <label ><input type="radio" name="gender" value="Male" required>Male</label>
+  <label><input type="radio" name="gender" value="Female" required>Female<br></label>
+  <label for="age">Age:</label>
+  <input id="age" type="number" value=18 required><br>
+  <label for="birth">Date of birth:</label>
+  <input id="birth" type="date"></br>
+  <label for="favoritecolor">Favorite color:</label>
+  <input id="favoritecolor" type="color"><br>
+  <label for="country">Which country:</label>
+  <select id="country">
+    <option>China</option>
+    <option>Hongkong</option>
+    <option>c1</option>
+    <option>c2</option>
+    <option>c3</option>
+    <option></option>
+  </select>
+</fieldset>
+<fieldset>
+  <legend>Your Indicators</legend>
+  <label for="height">Height:</label>
+  Short<input id="height" type="range" min="0" max="100">Tall<br>
+  <label for="salary">Salary:</label>
+  Poor<input id="salary" type="range" min="0" max="100">Rich<br>
+</fieldset>
+<fieldset>
+  <legend>Your Contact Information</legend>
+  <label for="email">Email:</label>
+  <input id="email" type="email" required><br>
+  <label for="tel">Mobile:</label>
+  <input id="tel" type="tel"><br>
+  <label for="addr">Address:</label>
+  <textarea id="addr" rows="2" cols="50"></textarea><br>
+  <label>Method to contact you:</label>
+  <label><input type="checkbox" value="email">Email</label>
+  <label><input type="checkbox" value="whatsapp">Whatsapp</label>
+  <label><input type="checkbox" value="inapp">Inappchat</label>
+</fieldset>
+<input type="button" value="submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<html>
+<header>
+  <meta charset="utf-8">
+  <style>
+  img {
+    position:absolute;
+  }
+  div {
+    position: absolute;
+  }
+  .box {
+    width: 500px;
+    height: 500px;
+  }
+  #rightSide {
+    left: 500px;
+    border-left: 1px solid black
+  }
+  </style>
+</header>
+<body>
+  <h1>Matching Game</h1>
+  <p>Click on the extra smiling face on the left</p>
+  <div class="box" id="leftSide"></div>
+  <div class="box" id="rightSide"></div>
+  <script>
+    var numberOfFaces = 5;
+    var theLeftSide = document.getElementById("leftSide");
+    var theRightSide = document.getElementById("rightSide");
+    function generateFaces(){console.log("load");
+      for(var i = 0; i < numberOfFaces; i ++){
+        var x = Math.random()*400;
+        var y = Math.random()*400;
+        var node = document.createElement("img");
+        node.setAttribute("src", "http://home.cse.ust.hk/~rossiter/mooc/matching_game/smile.png");
+        node.style.left=x;
+        node.style.top=y;
+        theLeftSide.appendChild(node);
+      }
+      var leftsizeImage = theLeftSide.cloneNode(true);
+      leftsizeImage.id = "n";
+      var nodeToDel = leftsizeImage.getElementsByTagName("img")[leftsizeImage.getElementsByTagName("img").length-1];
+      leftsizeImage.removeChild(nodeToDel);
+      theRightSide.appendChild(leftsizeImage);
+
+      var nodeEvent = theLeftSide.getElementsByTagName("img")[theLeftSide.getElementsByTagName("img").length-1];
+      nodeEvent.onclick = function(event){
+        emptyImage();
+        numberOfFaces += 5;
+        generateFaces();
+      }
+      for(var i = 0; i < numberOfFaces-1; i ++){
+        var nodeEnd = theLeftSide.getElementsByTagName("img")[i];
+        nodeEnd.onclick = function(event){
+          alert("game over!");
+        }
+      }
+    }
+
+    function emptyImage(){
+      var del = theLeftSide.getElementsByTagName("img");
+      for(var i = 0; i < del.length; i ++)
+        theLeftSide.removeChild(del[i]);
+      del = theRightSide.getElementsByTagName("div")[0];
+      theRightSide.removeChild(del);
+    }
+
+    window.onload = generateFaces;
+  </script>
+</body>
+</html>

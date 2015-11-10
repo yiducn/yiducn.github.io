@@ -1,0 +1,23 @@
+<html>
+<header>
+  <meta charset="utf-8">
+</header>
+<body id="body">
+  <script>
+    var color = ["blue", "green", "gold", "gray", "orange", "red", "white"];
+    var input_color = prompt("I am thinking one of those colors:\n\n"
+      +color.join() +"\n\n"+
+    "What color am I thinking?");
+    var thinking_color = Math.floor(Math.random()*color.length);
+    while(color.indexOf(input_color) != thinking_color){
+      input_color = prompt("I am thinking one of those colors:\n\n"
+        +color.join() +"\n\n"+
+      "What color am I thinking?");
+    }
+    var myBody=document.getElementsByTagName("body")[0];
+    myBody.style.background=color[thinking_color];
+
+
+  </script>
+</body>
+</html>
