@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Visualizing Network with Chord</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="visDiv" >
+        <div id="mainDiv">
+            <div id='content' class="hintHeader">本页面为参加ChinaVis2015挑战赛的结果展示页面，主要针对TSZNet公司的内部网络流量数据进行可视分析系统的实现，总结公司内网的日常网络访问模式。
+            </div>
+            <div id='content2' class="hintHeader">该系统利用了Overview+Detail的分析方法，首先通过总览的方法，交互式的发现流量及访问次数两个维度下的不同服务器节点。在总览分析时，我们将和弦图与气泡图进行了有效的结合，能够直观的发现客户端与服务器的交互流量大小及服务器节点。总览分析后，针对发现的服务器节点进行细节的分析， 结合和弦图、气泡图、趋势图等多种可视化方法，从协议类型、时序趋势等不同角度，分析服务器的类别，并从不同角度对服务器进行了划分；最终，给出该网络流量日志正常通信模式。
+            </div>
+            <div id="chordSvgDiv"></div>
+            <div class="bpg-navBar">
+                <ul class="bpg-navigation clearfix">
+                    <li id="houseButton" class="selected">Access Count</li>
+                    <li id="senateButton">Flow Size</li>
+                </ul>
+            </div>
+            <div class="treemap-bar">
+                <label for="show-treemap-btn"><b>Display Treemap</b> (Servers) </label>
+                <input id="show-treemap-btn" type="button" value=" Show " onclick="buildTreemap()" />
+                <input id="hide-treemap-btn" type="button" value=" Hide " onclick="hideTreemap()" />
+                <label class="bar-option"><input class="bar-option" type="radio" name="mode" value="size" checked /> Flow Size</label>
+                <label class="bar-option"><input class="bar-option" type="radio" name="mode" value="count" /> Visit Count</label>
+            </div>
+            <div id="treemapSvgDiv"></div>
+            <div class="timeline-bar">
+                <label for="show-timeline-btn"><b>Display Timeline</b> (Network flows) </label>
+                <input id="show-timeline-btn" type="button" value=" Show " onclick="buildTimeline()" />
+                <input id="hide-timeline-btn" type="button" value=" Hide " onclick="hideTimeline()" />
+                <input id="next-graph-btn" type="button" value=" Next " onclick="nextGraph()" />
+            </div>
+            <div id="timelineSvgDiv"></div>
+            <div class="pies-bar">
+                <label for="show-pies-btn"><b>Display Pies</b> (Mode) </label>
+                <input id="show-pies-btn" type="button" value=" Show " onclick="buildPies()" />
+                <input id="hide-pies-btn" type="button" value=" Hide " onclick="hidePies()" />
+            </div>
+            <div id="piesSvgDiv"></div>
+            <div id="headerRight" style="  text-align: left;width:350px; right:20px;">
+                <div class="hint" style="font-size:26px; color:#000;">ChinaVis Data Challenge</div>
+                <div class="hint">
+                    <div id="totalDiv" style="color: #000; font-size:22px; font-weight:bold; margin-top:5px; font-family: Georgia; font-style:italic">
+                        TCP Flow Logs of A Week
+                    </div>
+                    <div style="  text-align: left;width:380px;">完成人：刘杰洪、蔡芷铃、李文超 (中国科学院大学)</div>
+                    <div style="  text-align: left;width:380px;">指导老师：杜一、郭旦怀 (中国科学院计算机网络信息中心)</div>
+                    <div style="color: #777; font-size:14px; margin-top:5px; margin-bottom:10px;">
+                        <a href="p2_chinavis.pdf" title="Poster">Poster 下载</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="toolTip" class="tooltip" style="width:250px; height:120px; position:absolute;">
+        <div id="header1" class="header2"></div>
+        <div class="header-rule"></div>
+        <div id="head" class="header"></div>
+        <div class="header-rule"></div>
+        <div  id="header2" class="header3"></div>
+        <div  class="tooltipTail"></div>
+    </div>
+    <script type="text/javascript" src="scripts/d3/d3.min.js"></script>
+    <script type="text/javascript" src="scripts/app/globals.js"></script>
+    <script type="text/javascript" src="scripts/app/initialize.js"></script>
+    <script type="text/javascript" src="scripts/app/events.js"></script>
+    <script type="text/javascript" src="scripts/app/data.js"></script>
+    <script type="text/javascript" src="scripts/app/chords.js"></script>
+    <script type="text/javascript" src="scripts/app/update.js"></script>
+    <script type="text/javascript" src="scripts/app/treemap.js"></script>
+    <script type="text/javascript" src="scripts/app/timeline.js"></script>
+    <script type="text/javascript" src="scripts/app/pies.js"></script>
+    <script type="text/javascript" src="scripts/app/main.js"></script>
+</body>
+</html>
