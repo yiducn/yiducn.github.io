@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <title>杜一</title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="display.css">
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="display.js"></script>f
+    <script type="text/javascript">
+        $(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                console.log(this);
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+        });
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Yi</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active" ><a href="#">Home</a></li>
+                <li><a href="#education" class="scroll">教育背景</a></li>
+                <li><a href="#project" class="scroll">项目</a></li>
+                <li><a href="#researchproject" class="scroll">科研经费</a></li>
+                <li><a href="#paper" class="scroll">科研成果</a></li>
+                <li><a href="doc/cv.pdf">个人简历</a></li>
+				<li><a href="http://yiducn.gitbooks.io/infoviswiki/content/">图书</a></li>
+
+        <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Coursera<span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="../course/DataVisualization/index.html">Data Visualization</a></li>
+        <li><a href="../course/HTML5/index.html">HTML, CSS and JavaScript</a></li>
+      </ul>
+    </li>
+        <li><a href="../chinavis2015/index.html">ChinaVis挑战赛</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+<div class="container" >
+    <div class="jumbotron" id="main">
+        <div class="row">
+            <div class="col-md-3" style="padding-top: 30px"><img src="img/yidu.png" ></div>
+            <div class="col-md-9" style="margin-top: 10px"><h2>杜 一 </h2>
+                <h3>我目前就职于中国科学院计算机网络信息中心，科学数据中心，任助理研究员.</h3>
+                <h3>我的研究方向为信息可视化与人机交互.</h3>
+            </div>
+        </div>
+        <table class="table" id="education">
+            <tbody>
+            <tr><td>教育背景</td><td></td></tr>
+            <tr>
+                <td width="200px" >2015年9月 - 今</td>
+                <td>普渡大学<a href="http://www.purdue.edu/discoverypark/vaccine/">可视分析实验室(VACCINE)</a><b>访问学者</b>
+                    <br>研究方向: 信息可视化，可视分析
+                    <br>合作导师: <a href="https://engineering.purdue.edu/~ebertd/">David Ebert</a>
+                </td>
+            </tr>
+            <tr>
+                <td width="200px" >2013年7月 - 今</td>
+                <td>中国科学院计算机网络信息中心，科学数据中心<b>助理研究员</b>
+                    <br>研究方向: 信息可视化, 人机交互
+                </td>
+            </tr>
+            <tr>
+                <td width="200px" >2008年9月 - 2013年7月</td>
+                <td>中国科学院软件研究所人机交互技术与智能信息处理实验室<b>博士</b>
+                    <br><i>E-UIDL: 一种移动计算环境下的用户界面描述语言</i>
+                    <br>指导老师: 戴国忠
+                    <br>答辩委员: 华庆一, 史元春, 汪国平, 王志良, 山世光
+                </td>
+            </tr>
+            <tr>
+                <td width="200px" >2004年9月 - 2008年7月</td>
+                <td>山东大学软件学院<b>本科</b>
+                    <br><i>笔式图形编辑框架的研究与应用</i>
+                    <br>指导老师: 闫中敏, 滕东兴
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <table class="table" id="project">
+            <tbody>
+            <tr><td>项目</td><td></td></tr>
+            <tr>
+                <td width="200px" ><a href="img/proj1.png"><img src="img/proj1_small.png"></a></td>
+                <td><b>数据可视化平台(DVIZ)</b>
+                    <br>类似ManyEyes的数据可视化平台，引入了可视化项目的概念，支持九种不同的数据类型、五种布局类型、十一种可视化呈现方式，以及对可视化图形之间关联的支持.
+                    <br><b>技术:</b>Java, ECharts, D3.js
+                    <br><b>论文及演示:</b><a href="http://www.dviz.cn/dviz">在线系统</a>
+					<a href="screenshot/dviz.gif">截图</a>
+          <a href="http://www.dviz.cn/dviz/gallary/">结果</a>
+          <a href="https://youtu.be/H_K9Q6WanRU">视频</a>
+                </td>
+            </tr>
+            <tr>
+                <td width="200px"><a href="img/proj2.png"><img src="img/proj2_small.png"></a></td>
+                <td><b>H7N9 可视分析系统</b>
+                    <br>对2013年至今的禽流感数据进行可视化.该项目通过Google Map及Heatmap.js实现病例的个体分布与区域分布的可视化，通过基于D3.js的平行坐标实现可视化的数据过滤与分析.
+                    <br><b>技术:</b>Java, D3.js
+                    <br><b>论文及演示:</b>
+					<a href="http://www.dviz.cn/h7n9/en/index.html">在线系统</a>
+					<a href="screenshot/h7n9.gif">截图</a><a href="doc/2015_poster.pdf">论文1</a><a href="doc/2015_dviz.pdf">论文2</a>
+                </td>
+            </tr>
+            <tr>
+                <td width="200px"><a href="img/proj3.png"><img src="img/proj3_small.png"></a></td>
+                <td><b>抗辐射轨道卫星演示系统</b>
+                    <br>针对空间辐射数据集轨道数据，使用World Wind Java SDK开发可视化系统.系统通过二维与三维视图结合，以及区域填充图等方式对卫星轨道及相关辐射带进行可视化.
+                    <br><b>技术:</b>Java, WorldWind Java SDK
+                    <br><b>论文及演示:</b><a href="screenshot/orbit.png">截图1</a>
+                    <a href="screenshot/orbit2.png">截图2</a>
+                    <a href="screenshot/orbit3.gif">截图3</a>
+                    <a href="https://youtu.be/nE8sE-f6MyE">演示</a>
+                </td>
+            </tr>
+            <tr>
+                <td width="200px"><a href="img/proj4.png"><img src="img/proj4_small.png"></a></td>
+                <td><b>食品质量可视分析系统</b>
+                    <br>对某公司500余类食品的抽检数据进行可视化.该系统使用ECharts的地图、趋势图等方式，结合不同的交互逻辑的设计，实现对检测质量的可视分析.
+                    <br><b>技术:</b>Java, ECharts, MongoDB
+                    <br><b>论文及演示:</b>
+                </td>
+            </tr>
+            <tr>
+                <td width="200px"><a href="img/proj5.png"><img src="img/proj5_small.png"></a></td>
+                <td><b>轨道数据可视化系统</b>
+                    <br>针对32颗气象卫星的轨道数据及卫星相互关系产生的事件数据，使用World Wind Java SDK开发轨道可视化系统.
+                    <br><b>技术:</b>Java, WorldWind Java SDK
+                    <br><b>论文及演示:</b><a href="screenshot/o1.png">截图1</a>
+                    <a href="screenshot/o2.png">截图2</a>
+                    <a href="screenshot/o3.png">截图3</a>
+                    <a href="screenshot/o4.png">截图4</a>
+                </td>
+            </tr>
+            <tr>
+                <td width="200px"><a href="img/proj6.png"><img src="img/proj6_small.png"></a></td>
+                <td><b>出租车GPS数据处理与可视化系统</b>
+                    <br>对100亿条出租车GPS数据进行处理及可视化.通过对数据进行合理分割、使用分片机制搭建MongoDB集群、后台搭建并行的R处理环境等方式提高数据的检索性能，前端使用OpenLayers进行基于地图的数据呈现.
+                    <br><b>技术:</b>Java, MongoDB, OpenLayers
+                    <br><b>论文及演示:</b><a href="screenshot/geo1.png">截图1</a>
+                    <a href="screenshot/geo2.png">截图2</a>
+                    <a href="screenshot/geo3.png">截图3</a>
+                    <a href="doc/2014platform.pdf">论文</a>
+                </td>
+            </tr>
+            <tr>
+                <td width="200px"><a href="img/proj7.png"><img src="img/proj7_small.png"></a></td>
+                <td><b>移动环境下用户界面描述语言的研究</b>
+                    <br>该项目设计一种模块化、可扩展的用户界面描述语言；并提出基于该描述语言的用户界面生成框架及相关的界面生成算法.界面设计及生成使用基于Eclipse的RCP开发，生成C语言与Java语言代码.
+                    <br><b>技术:</b>Java, C
+                    <br><b>论文及演示:</b><a href="screenshot/tools.png">设计工具截图1</a>
+                    <a href="screenshot/tools2.png">设计工具截图2</a>
+                    <a href="screenshot/generated.png">生成工具截图1</a>
+                    <a href="screenshot/generated2.png">生成工具截图2</a>
+                    <a href="screenshot/generated3.png">生成工具截图3</a>
+                    <a href="screenshot/generated4.png">生成工具截图4</a>
+                </td>
+            </tr>
+            <tr>
+                <td width="200px"><a href="img/projGephi.png"><img src="img/projGephi_small.png"></a></td>
+                <td><b>Gephi社会网络数据导入插件</b>
+                    <br>Gephi是一个图可视化软件，使用Java语言编写，能够实现图的导入、呈现、导出等基本操作，还包括图布局算法、图节点聚类算法、统计算法等.
+                    <br><b>技术:</b>Java, Netbeans
+                    <br><b>论文及演示:</b><a href="screenshot/projGephi2.png">截图1</a>
+                    <a href="screenshot/projGephi3.png">截图2</a>
+                    <a href="screenshot/projGephi4.png">截图3</a>
+                </td>
+            </tr>
+            <tr>
+                <td width="200px"><a href="img/proj8.png"><img src="img/proj8_small.png"></a></td>
+                <td><b>基于嵌套圆的文件管理系统</b>
+                    <br>Desc.
+                    <br><b>技术:</b>C++,OpenGL
+                    <br><b>论文及演示:</b><a href="http://youtu.be/8mTt9-gF_f8">演示</a>
+                    <a href="doc/bigdatasmallui.pdf">论文</a>
+                </td>
+            </tr>
+            <tr>
+                <td width="200px"><a href="img/proj10.png"><img src="img/proj10_small.png"></a></td>
+                <td><b>基于Daisy的工厂生产流程可视分析系统</b>
+                    <br>TODO
+                    <br><b>技术:</b>Java, RCP, Prefuse
+                    <br><b>论文及演示:</b>
+                    <a href="http://youtu.be/J28WFJgpDac">演示</a>
+                    <a href="doc/2013_daisy.pdf">论文</a>
+                </td>
+            </tr>
+            <tr>
+                <td width="200px"><a href="img/proj9.png"><img src="img/proj9_small.png"></a></td>
+                <td><b>Daisy</b>
+                    <br>一款可视分析工具箱，实现了数据的提取、数据的展示、以及数据的分析功能.已成功应用于某两家服装生产工厂及一家地理信息系统公司.
+                    <br><b>技术:</b>Java, RCP, Prefuse
+                    <br><b>论文及演示:</b>
+                    <a href="http://youtu.be/52prBamNB0k">演示</a>
+                    <a href="doc/2013_daisy.pdf">论文</a>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+
+        <!--research project-->
+        <table class="table" id="researchproject">
+            <tbody>
+            <tr><td>科研经费</td><td></td></tr>
+            <tr>
+                <td><b>基于Overview＋Detail的交互式时空数据可视化方法研究</b>.
+                    中国科学院知识创新工程 (<b>项目负责人,2015-2016,10万元</b>)</td>
+            </tr>
+            <tr>
+                <td><b>模型驱动的大规模时空数据可视化开发方法研究</b>.
+                    国家自然科学基金青年项目 (<b>项目负责人,2015-2017,26万元</b>)</td>
+            </tr>
+            <tr>
+                <td><b>基于真实隐喻的儿童交互式学习环境研究</b>.
+                    国家自然科学基金青年项目 (项目参与人)</td>
+            </tr>
+            <tr>
+                <td><b>图文混合笔输入文档分析与识别的理论与方法研究</b>.
+            国家自然科学基金面上项目 (项目参与人)</td>
+            </tr>
+            <tr>
+                <td><b>基于设备属性融合的人机交互技术研究</b>.
+            国家自然科学基金海外及港澳学者合作研究基金 (项目参与人)</td>
+            </tr>
+            <tr>
+                <td><b>面向多设备的个人信息管理的研究</b>.
+            国家自然科学基金青年项目 (项目参与人)</td>
+            </tr>
+            <tr>
+                <td><b>面向视频语义描述与交互的草图界面关键技术研究</b>.
+            国家自然科学基金面上项目 (项目参与人)</td>
+            </tr>
+            <tr>
+                <td><b>Reality-based Interaction用户界面模型和评估方法研究</b>.
+            国家自然科学基金面上项目 (项目参与人)</td>
+            </tr>
+            <tr>
+                <td><b>基于手写设备的在线笔迹智能理解和交互技术研究</b>.
+            国家自然科学基金青年项目 (项目参与人)</td>
+            </tbody>
+        </table>
+
+        <!--papers-->
+<!--        <nav class="navbar navbar-default" role="navigation" id="paper">
+            <div id="" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#education">Conference Papers</a></li>
+                    <li><a href="#project" >Journal Articles</a></li>
+                    <li><a href="#paper">Papers</a></li>
+                    <li><a href="#education">Contact</a></li>
+                    <li><a href="#cv" >CV</a></li>
+
+                </ul>
+            </div>
+        </nav>-->
+        <table class="table" id="paper">
+            <tbody>
+                <tr><td>论文</td><td></td></tr>
+                <tr>
+                    <td width="200px" style="padding-top: 30px;"><b>期刊论文</b></td>
+                    <td>
+                        <br>杜一, 郭旦怀, 陈昕, 任磊, 戴国忠, <b>DVIZ: 一种模型驱动的可视化生成系统</b>, 软件学报, 2015.(to appear)<br>
+                        <br>杜一, 田丰, 戴国忠, <a href="doc/euidlDesign.pdf"><b>E-UIDL用户界面描述语言下的开发方法</b></a>, 软件学报, 26(7), pp. 1772-1784, 2015.<br>
+                        <br>杜一, 郭旦怀, 周园春, 黎建辉, <a =href="2014platform.pdf"><b>一种大规模时空数据处理与可视化框架</b></a>, 计算机研究与发展,  51(s2), pp. 10-17, 2015.<br>
+                        <br>任磊, 魏永长, 杜一, 戴国忠, <a href="doc/bigdatasmallui.pdf"><b>面向小界面大数据可视化的语义Focus+Context人机交互技术</b></a>, 计算机学报, 38(12), pp. 2488-2498, 2015.<br>
+                        <br>任磊, 杜一, 马帅, 张小龙, <a href="http://www.jos.org.cn/1000-9825/4645.htm"><b>大数据可视分析综述</b></a>, 软件学报, 25(19), pp. 1909-1936, 2014.<br>
+                        <br>杜一, 田丰, 马翠霞, 戴国忠, <b>基于多尺度描述方法的移动用户界面生成框架</b>, 计算机学报. 36(11), pp. 2179-2190, 2013.<br>
+                        <br>杜一, 任磊, <b>DaisyVA:支持信息多面体可视分析的智能交互式可视化平台</b>, 计算机辅助设计与图形学学报, 25(8), pp. 1177-1182, 2013.<br>
+                        <br>杜一, 邓昌智, 田丰, 戴国忠, <b>一种新的用户界面描述语言</b>, 软件学报, 24(5), pp. 1127-1142, 2013.<br>
+                        <br>杜一, 吕菲, 田丰, 侯文君, 马翠霞, 戴国忠, <b>一种支持超视频创建与可视呈现的草图界面技术</b>, 软件学报, 24(s2), pp. 32-41, 2013.<br>
+                        <br>杜一, 田丰, 王锋, 戴国忠, 王宏安, <b>一种移动环境下的用户模型</b>, 软件学报, 22(s1), pp. 120-128, 2011.<br>
+                        <br>Yi Du, Cuixia Ma, Dongxing Teng,Guozhong Dai, <a href="doc/CONCEPT-SKETCH_2010.pdf"><b>CONCEPT-SKETCH: A Tool for Cooperative Visual Analytics</b></a>, International Journal of Advanced Intelligence (IJAI), vol. 3, no. 1, pp. 95-113, 2011.<br>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200px" style="padding-top: 30px;"><b>会议论文／海报张贴</b></td>
+                    <td>
+                        <br>Yi Du, Qianyu Liu, Yuanchun Zhou, Jianhui Li, <b>DVIZ: A Model-driven Visualization Generation System</b> (Poster), in IEEE Symposium on Visual Analytics Science and Technology (VAST) 2015, Chicago, USA, 2015. (To appear)<br>
+                        <br>Danhuai Guo, Yi Du,<b>A Visualization Platform for Spario-Temporal Data: a Data Intensive Computation Framework</b>, in the 23rd International conference on Geoinformatics 2015, Wuhan, China, 2015. (To appear)<br>
+                        <br>Lei Ren,Yi Du, <a href="doc/sketch-fisheyes_2014.pdf"><b>A Sketch+Fisheye Interface for Visual Analytics of Large Time-Series</b></a> (Poster), in IEEE Symposium on Visual Analytics Science and Technology (VAST) 2014, Paris, France, 2014, pp. 265-266.<br>
+                        <br>Lei Ren, Jin Cui, Yi Du,Guozhong Dai, <a href="doc/Multilevel_2013.pdf"><b>Multilevel Interaction Model For Hierarchical Tasks In Information Visualization</b></a>,
+                        in The 6th International Symposium on Visual Information Communication and Interaction (VINCI 2013) Tianjin, China, 2013, pp. 11-16. （EI）<br>
+                        <br>Yingying Jiang, Feng Tian, Guang Li, Xiaolong (Luke) Zhang, Yi Du, Guozhong Dai,Hongan Wang, <b>SpeechTouch: Precise Cursor Positioning on Touch Screen Mobiles</b>,
+                        in 15th International Conference on Human-Computer Interaction with Mobile Devices and Services (MobileHCI 2013), Munich, 2013.（EI）<br>
+                        <br>Yi Du, Cuixia Ma, Dongxing Teng,Guozhong Dai, <b>Cooperative Concept Map Based on Cognitive Model for Visual Analysis</b>, in The 3rd Visual Information Communication - International Symposium (VINCI 2010), Beijing, China, 2010, pp. 76-83.（EI）<br>
+                        <br>Cuixia Ma, Yi Du, Dongxing Teng, Jia Chen, Hongan Wang, Guozhong Dai, <b>An Adaptive Sketching User Interface for Education System in Virtual Reality</b>, in Proceedings 2009 IEEE International Symposium on IT in Medicine and Education (ITME 2009), Jinan, China, 2009, pp. 796-802.（EI）<br>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200px" style="padding-top: 30px;"><b>学位论文</b></td>
+                    <td>
+                       <br> 杜一, <b>E-UIDL: collaborator</b>, 博士学位论文, 中国科学院, 中国, 2013<br>
+                        <br>杜一, <b>笔式图形编辑框架的研究与应用</b>, 学士学位论文, 山东大学, 中国, 2008.<br>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200px" style="padding-top: 30px;"><b>专利</b></td>
+                    <td>
+                        <br>中国专利：<b>一种基于访问热度的时空数据服务调度方法.</b> 完成人： 郭旦怀, 杜一, 周园春, 黎建辉. 申请号：2014108485284<br>
+                        <br>中国专利：<b>一种基于WEB的多模型数据可视化开发方法及平台.</b> 完成人：杜一, 郭旦怀, 周园春, 黎建辉. 申请号：2014108493971<br>
+                        <br>中国专利：<b>一种交互式空间场景检索方法.</b> 完成人： 郭旦怀, 杜一, 周园春, 黎建辉. 申请号：201310682924X<br>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200px" style="padding-top: 30px;"><b>软件著作权</b></td>
+                    <td>
+                        <br><b>流行性疾病时空可视分析系统. </b><br>
+                        <br><b>基于出租车数据的在线可视化系统.</b><br>
+                        <br><b>基于经纬高数据的卫星可视化系统.</b> 登记号：2014SRBJ0295<br>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200px" style="padding-top: 30px;"><b>图书章节</b></td>
+                    <td>
+                        <br> 戴国忠,田丰, <b>笔式用户界面 (第二版)</b>. 中国科技大学出版社, 2014. 第6章、第7章.<br>
+                        <br>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</div>
+</div>
+</body>
+</html>
