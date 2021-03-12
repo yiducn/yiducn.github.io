@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>大数据知识工程实验室: PackOne 0.1.b3 开源，云端大数据软件栈快速弹性部署工具</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet"
+              href="http://netdna.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+        <link rel="stylesheet"
+              href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/group.css">
+    </head>
+    <body>
+        <div class="container">
+            <!-- This is a bit nasty, but it basically says be a column first, and on larger screens be a spaced out row -->
+            <div class="header d-flex
+                        flex-column
+                        flex-md-row justify-content-md-between">
+                <a href="/" class="">
+                    <img src="/img/logo.png"
+                         srcset="/img/logo@2x.png 2x"
+                         alt="CNIC_Bigdata" id="logo">
+                </a>
+                <ul class="nav nav-pills justify-content-center">
+
+                    
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="">
+                                主页
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="people.html">
+                                人员
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="research.html">
+                                项目
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="publications.html">
+                                成果
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="code.html">
+                                代码
+                            </a>
+                        </li>
+
+                    
+
+                </ul>
+            </div>
+
+            
+
+            
+                <h1>PackOne 0.1.b3 开源，云端大数据软件栈快速弹性部署工具</h1>
+            
+
+            <p class="date">July 16, 2019</p>
+
+<div class="post">
+<div align="center">
+  <img src="/img/packonereport/1logo.jpg" height="100" width="441" />
+</div>
+<p>PackOne致力于实现主流大数据软件在云端的快速弹性部署。通过对云API和Apache Ambari API的联合调用，完成Hadoop、Spark、NiFi、PiFlow、Kylin、MangoDB、Neo4J等流行的大数据管理/处理软件在云端的一键部署和一键伸缩。主要特性包括：</p>
+
+<p>1、支持在空白虚拟机上完成大数据处理集群的全自动部署。</p>
+
+<p>2、通过Apache Ambari对已部署的大数据软件进行状态监控、配置管理。</p>
+
+<p>3、通过将模版集群物化为系统镜像，实现新集群的分钟级快速部署。</p>
+
+<p>4、通过集群节点的全自动增删，实现各类大数据软件处理能力的分钟级弹性伸缩。</p>
+
+<p>5、在同一个界面上对来自不同云的虚拟机、存储卷、镜像、模版等进行CURD操作。</p>
+
+<p>PackOne支持不同类型的云平台。目前版本实现了对OpenStack和EVCloud两款私有云的适配。</p>
+
+<div align="center">
+  <img src="/img/packonereport/2intro.jpg" height="330" width="714" />
+</div>
+
+<p>packone 界面示例1</p>
+<div align="center">
+  <img src="/img/packonereport/3intro.jpg" height="330" width="714" />
+</div>
+<p>packone 界面示例2</p>
+
+<p>##一、安装</p>
+
+<p>选择一台能够访问目标云的Linux主机 （以Centos 7.5为佳），依次执行：</p>
+
+<pre><code>pip install pk1
+
+pip install -U pip setuptools
+</code></pre>
+<p>##二、配置</p>
+
+<p>创建一个Postgresql数据库实例，并准备好其连接信息，包括：db_user（数据库用户）、db_passwd（用户密码）、db_host（数据库主机地址）、db_port（数据库端口号）、db_name（数据库名）。然后执行：</p>
+
+<pre><code>pk1 setup --database db_user:db_passwd:db_host:db_port:db_name
+</code></pre>
+
+<p>（会提示设置管理员admin的邮箱、密码等信息。）</p>
+
+<p>##三、运行PackOne服务</p>
+
+<pre><code>pk1 start [--listening 0:11001]
+</code></pre>
+<p>##四、快速上手：以OpenStack私有云为例</p>
+
+<p>访问网址：http://packone-server-ip:11001
+进入添加“云”的界面，输入如下图格式所示的OpenStack用户密钥信息。创建成功会自动导入云端的镜像、模版。然后进入user/profiles界面，为当前用户添加一个profile，进入user/balances界面，为该profile在新添加的云上添加余额（大于零即可）。</p>
+<div align="center">
+  <img src="/img/packonereport/4intro.jpg" height="330" width="714" />
+</div>
+<p>回到云列表界面，选择刚才新创建的云，在操作下拉框点选“bootstrap…”按钮，触发在空白虚拟机上全自动部署模版集群的后台工作流。通过clouds/operations界面可监控工作流的执行进度，若遇到某步操作出错，可以点按re-run按钮重新执行，直至成功。</p>
+<div align="center">
+  <img src="/img/packonereport/5intro.jpg" height="330" width="714" />
+</div>
+<p>当工作流执行完毕后，可以在engines/clusters界面选择刚才创建的名为bootstrap.<云名称>的模版集群，点按“Materialize the cluster as a scale”将其镜像化。最后，创建新集群时，可在engines/cluster的创建集群界面选择名为“packone.<云名称>”的scale，实现新集群的快速创建。</云名称></云名称></p>
+
+<p>##五、停止PackOne服务</p>
+<pre><code>pk1 stop
+</code></pre>
+<p>PackOne目前以Apache License v2.0 协议在GitHub（https://github.com/cas-packone/packone）、Gitee（https://gitee.com/opensci/packone）上开源。欢迎提交Issue、PR。</p>
+
+<p>##六、相关链接</p>
+
+<p>PackOne 的详细介绍：点击查看 (https://www.oschina.net/p/packone)</p>
+
+<p>PackOne 的下载地址：点击下载 (https://www.oschina.net/home/login?goto_page=https://www.oschina.net/news/108047/packone-0-1-b3)</p>
+
+
+</div>
+
+
+            <div class="footer">
+            <div class="height:45px; background:#191c2a; color:#74819f; text-align:center; line-height:45px; margin-top:40px;">
+                <div style="margin:0 auto;width:700px;">
+                    <div style='float:left;'>
+                    版权所有 Copyright&copy;中国科学院计算机网络中心·大数据技术与应用发展部， 保留一切权利。<a href="http://beian.miit.gov.cn">(京ICP备09112257号-83)</a>
+                    </div>
+                    <script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/33/000/0000/60451603/CA330000000604516030030.js' type='text/javascript'%3E%3C/script%3E"));</script>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- /container -->
+
+        <!-- Support retina images. -->
+        <script type="text/javascript"
+                src="/js/srcset-polyfill.js"></script>
+    </body>
+</html>

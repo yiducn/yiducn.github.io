@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>大数据知识工程实验室: 学生论文分享第五期</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet"
+              href="http://netdna.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+        <link rel="stylesheet"
+              href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/group.css">
+    </head>
+    <body>
+        <div class="container">
+            <!-- This is a bit nasty, but it basically says be a column first, and on larger screens be a spaced out row -->
+            <div class="header d-flex
+                        flex-column
+                        flex-md-row justify-content-md-between">
+                <a href="/" class="">
+                    <img src="/img/logo.png"
+                         srcset="/img/logo@2x.png 2x"
+                         alt="CNIC_Bigdata" id="logo">
+                </a>
+                <ul class="nav nav-pills justify-content-center">
+
+                    
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="">
+                                主页
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="people.html">
+                                人员
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="research.html">
+                                项目
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="publications.html">
+                                成果
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="code.html">
+                                代码
+                            </a>
+                        </li>
+
+                    
+
+                </ul>
+            </div>
+
+            
+
+            
+                <h1>学生论文分享第五期</h1>
+            
+
+            <p class="date">April 01, 2019</p>
+
+<div class="post">
+<p>分享内容：<br />
+1.郭世晨：《Squeeze-and-Excitation Networks（SENet）》</p>
+
+<h2 id="squeeze-and-excitation-networkssenet">Squeeze-and-Excitation Networks（SENet）</h2>
+<ul>
+  <li>SENet是2017年（最后一年）imagenet识别挑战赛的冠军，在增加少量的计算代价前提下，为当前深度学习的性能带来了显著的提升。</li>
+  <li>SENet可以视为一个组件，构造非常简单，而且很容易被部署，不需要引入新的函数或者层。可以方便地嵌入到goolenet和resnet里。目前大多数的主流网络都是基于这两种类似的单元通过repeat方式叠加来构造的。由此可见，SE模块可以嵌入到现在几乎所有的网络结构中。</li>
+  <li>卷积核作为CNN的核心，通常都是在局部感受野上将空间（spatial）信息和特征维度（channel-wise）的信息进行聚合最后获取全局信息。</li>
+  <li>SENet的核心思想在于通过网络根据loss去学习特征权重，使得有效的feature map权重大，无效或效果小的feature map权重小的方式训练模型达到更好的结果。</li>
+  <li>论文的动机是从特征通道之间的关系入手，希望显式地建模特征通道之间的相互依赖关系。另外，没有引入一个新的空间维度来进行特征通道间的融合，而是采用了一种全新的“特征重标定”策略。具体来说，就是通过学习的方式来自动获取到每个特征通道的重要程度，然后依照这个重要程度去增强有用的特征并抑制对当前任务用处不大的特征，通俗来讲，就是让网络利用全局信息有选择的增强有益feature通道并抑制无用feature通道，从而能实现feature通道自适应校准。</li>
+</ul>
+
+<p><img src="/img/presentation/2019-04-01/15530656113553.jpg" alt="" /></p>
+
+<ul>
+  <li>
+    <p>Squeeze操作就是在得到多个feature map之后采用全局平均池化操作对其每个feature map进行压缩，使其$C2$个feature map最后变成$1<em>1</em>C2$的实数数列，这个实数数列某种程度上具有全局的感受野，并且输出的维度和输入的特征通道数相匹配。它表征着在特征通道上响应的全局分布，</p>
+  </li>
+  <li>
+    <p>Excitation操作，它是一个类似于循环神经网络中gate的机制。通过参数 来为每个特征通道生成权重，其中参数 被学习用来显式地建模特征通道间的相关性。</p>
+  </li>
+  <li>
+    <p>Reweight / scale的操作，我们将Excitation的输出的权重看做是进过特征选择后的每个特征通道的重要性，然后通过乘法逐通道加权到先前的特征上，完成在通道维度上的对原始特征的重标定。</p>
+  </li>
+</ul>
+
+<p><img src="/img/presentation/2019-04-01/15534779774551.jpg" alt="" /></p>
+
+<p>上左图是将SE模块嵌入到Inception结构的一个示例。方框旁边的维度信息代表该层的输出。这里我们使用global average pooling作为Squeeze操作。紧接着两个Fully Connected 层组成一个Bottleneck结构去建模通道间的相关性，并输出和输入特征同样数目的权重。我们首先将特征维度降低到输入的1/16，然后经过ReLu激活后再通过一个Fully Connected 层升回到原来的维度。这样做比直接用一个Fully Connected层的好处在于：1）具有更多的非线性，可以更好地拟合通道间复杂的相关性；2）极大地减少了参数量和计算量。然后通过一个Sigmoid的门获得0~1之间归一化的权重，最后通过一个Scale的操作来将归一化后的权重加权到每个通道的特征上。</p>
+
+<p>除此之外，SE模块还可以嵌入到含有skip-connections的模块中。上右图是将SE嵌入到 ResNet模块中的一个例子，操作过程基本和SE-Inception一样，只不过是在Addition前对分支上Residual的特征进行了特征重标定。如果对Addition后主支上的特征进行重标定，由于在主干上存在0~1的scale操作，在网络较深BP优化时就会在靠近输入层容易出现梯度消散的情况，导致模型难以优化。所以，像resnet这种网络层数很深的结构，只可以对residual项进行特征的重新标定，为了保证梯度不消失，skip-connection这一操作不应该被嵌入进主干里。</p>
+
+<ul>
+  <li>精度结果：SE-ResNet-50可以达到和ResNet-101一样的精度；SE-ResNet-101远远地超过了更深的ResNet-152。</li>
+</ul>
+
+</div>
+
+
+            <div class="footer">
+            <div class="height:45px; background:#191c2a; color:#74819f; text-align:center; line-height:45px; margin-top:40px;">
+                <div style="margin:0 auto;width:700px;">
+                    <div style='float:left;'>
+                    版权所有 Copyright&copy;中国科学院计算机网络中心·大数据技术与应用发展部， 保留一切权利。<a href="http://beian.miit.gov.cn">(京ICP备09112257号-83)</a>
+                    </div>
+                    <script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/33/000/0000/60451603/CA330000000604516030030.js' type='text/javascript'%3E%3C/script%3E"));</script>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- /container -->
+
+        <!-- Support retina images. -->
+        <script type="text/javascript"
+                src="/js/srcset-polyfill.js"></script>
+    </body>
+</html>

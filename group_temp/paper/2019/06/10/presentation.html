@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>大数据知识工程实验室: 学生论文分享第六期</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet"
+              href="http://netdna.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+        <link rel="stylesheet"
+              href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/group.css">
+    </head>
+    <body>
+        <div class="container">
+            <!-- This is a bit nasty, but it basically says be a column first, and on larger screens be a spaced out row -->
+            <div class="header d-flex
+                        flex-column
+                        flex-md-row justify-content-md-between">
+                <a href="/" class="">
+                    <img src="/img/logo.png"
+                         srcset="/img/logo@2x.png 2x"
+                         alt="CNIC_Bigdata" id="logo">
+                </a>
+                <ul class="nav nav-pills justify-content-center">
+
+                    
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="">
+                                主页
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="people.html">
+                                人员
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="research.html">
+                                项目
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="publications.html">
+                                成果
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="code.html">
+                                代码
+                            </a>
+                        </li>
+
+                    
+
+                </ul>
+            </div>
+
+            
+
+            
+                <h1>学生论文分享第六期</h1>
+            
+
+            <p class="date">June 10, 2019</p>
+
+<div class="post">
+<p>分享内容： <br />
+1.郭世晨：《XCeption and MobileNets》<br />
+2.乔子越：《Heterogeneous Graph Convolutional Network》</p>
+
+<hr />
+
+<h2 id="1-xception-and-mobilenets">1. 《XCeption and MobileNets》</h2>
+<h3 id="xceptiondeep-learning-with-depthwise-separable-convolutions">XCeption：Deep Learning with Depthwise Separable Convolutions</h3>
+<p>XCeption和Inception都是谷歌的工作。XCeption是对Inception的改进，是一种 Extreme Inception，因而得名 XCeption。</p>
+
+<p>要介绍Xception的话，需要先从Inception讲起，Inception v3的结构图如下Figure1。当时提出Inception的初衷可以认为是：特征的提取和传递可以通过$1\times1$卷积，$3\times3$卷积，$5\times5$卷积 (或者两个$3\times3$卷积的叠加) ，pooling等，到底哪种才是最好的提取特征方式呢？Inception结构将这个疑问留给网络自己训练，也就是将一个输入同时输给这几种提取特征方式，然后做concat</p>
+
+<p><img src="/img/presentation/2019-06-10/15534985938870.jpg" alt="" /></p>
+
+<p>在2016年底，Keras框架的创始人Francois Chollet提出了XCeption架构，它运用了Inception模组的核心思想，即，在模组内构建更多、更细的路径。XCeption遵循“跨通道的相关性”和“空间相关性”是完全可分离的，最好不要联合映射它们。首先，将Inception模组简化，如下图所示，Figure2其实等价于Figure3。</p>
+
+<p><img src="/img/presentation/2019-06-10/15534986739803.jpg" alt="" /></p>
+
+<p><img src="/img/presentation/2019-06-10/15534987627188.jpg" alt="" /></p>
+
+<p>可见，其中有3组路径，包含了2种思想 (注意，网络运作方向是从下往上)：</p>
+<ul>
+  <li>先由1$\times$1卷积负责处理通道间的混合。</li>
+  <li>再由3$\times$3卷积负责处理图像内部的空间结构。注意这里的3$\times$3卷积也会在通道间做混合。</li>
+</ul>
+
+<p>而XCeption的想法是，引入更多的路径，甚至去让每个通道都拥有1条独立路径，如Figure4所示：</p>
+
+<p><img src="/img/presentation/2019-06-10/15534991760930.jpg" alt="" /></p>
+
+<p>这时每个3$\times$3卷积核都独立运作在各自的通道中，不再负责在通道间混合。这无疑可节省大量参数量，提高运算速度。此时通道混合就完全由1$\times$1责。</p>
+
+<p>深度可分卷积可以节省近90%左右的参数量：例如令输出通道数为64，输入通道数为128，忽略偏置。如采用普通的3$\times$3卷积层，参数量是$64\times128\times3\times3=73728$。如采用深度可分卷积，参数量是$64\times3\times3+64\times128\times1\times1=8768$，仅为之前的12%。</p>
+
+<p>下图是在Imagenet上的比较：</p>
+
+<p><img src="/img/presentation/2019-06-10/15601426316488.jpg" alt="" /></p>
+
+<p>在深度可分卷积的内部不包含非线性。如果我们加上非线性，只能加在外面，在内部的1$\times$1和3$\times$3卷积之间没有非线性，而此前的Inception模组中，1$\times$1卷积和3$\times$3卷积后都有非线性。经Francois Chollet的测试，深度可分卷积的效果更好，虽然它的非线性更少，这可能是因为在路径细分之后，过多的非线性会阻碍信息的流动。</p>
+
+<!--目前在一些深度学习框架中，已有深度可分卷积，实际使用时与上图有个区别，在深度可分卷积中，是先执行3$\times$3卷积，再执行1$\times$1卷积。
+
+包括后来的MobileNet都是先做单通道的Depthwise convolution，然后再做Pointwise convolution(1$\times$1卷积)。-->
+
+<h3 id="mobilenets-efficient-convolutional-neural-networks-for-mobile-vision-applications">MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications</h3>
+
+<p>MobileNets是谷歌的工作，是为了移动和嵌入式设备而提出的高效模型，使用深度可分离卷积(depthwise separable convolutions， 即Xception变体结构）来构建轻量级深度神经网络，使得在CPU上也能达到理想的速度要求。</p>
+
+<p>既然使用了XCeption，是如何变体的呢？XCeption是先执行1$\times$1卷积，再执行3$\times$3卷积，而MobileNet所采用的变体结构是先做单通道的Depthwise convolution，然后再做Pointwise convolution (1$\times$1卷积)。</p>
+
+<p>如下图所示，下图a代表的是标准卷积核，b代表的是Depthwise convolution filter，c代表的是Pointwise convolution filter (1$\times$1卷积)。</p>
+
+<p><img src="/img/presentation/2019-06-10/15535737674722.jpg" alt="" /></p>
+
+<p>假设输入的Feature Maps为$D_F \times D_F \times M$，输出的Feature Maps为$D_F \times D_F \times N$。</p>
+
+<p><img src="/img/presentation/2019-06-10/15535742025510.jpg" alt="" /></p>
+
+<p><img src="/img/presentation/2019-06-10/15535742208199.jpg" alt="" /></p>
+
+<p><img src="/img/presentation/2019-06-10//15535742421474.jpg" alt="" /></p>
+
+<p>假设$D_K$是3，N为256，深度可分离卷积是标准卷积计算代价的十分之一左右，非常高效。</p>
+
+<p>MobileNet的全部网络结构细节如下图所示，其中Conv代表卷积，Conv dw代表深度可分卷积，s代表步长，FC代表全连接层（为清晰起见，省略BN和RELU层），$K \times K \times A \times B$代表使用$K \times K $卷积核，输入为A个通道，输出为B个通道。</p>
+
+<p><img src="/img/presentation/2019-06-10/15535995985645.jpg" alt="" /></p>
+
+<h4 id="width-multiplier">width multiplier</h4>
+<p>width multiplier主要是按比例减少整个网络的通道数，该参数记为$\alpha$，其取值范围为(0,1]，$\alpha$等于1的时候就是标准的MobileNet，那么输入与输出通道数将变成$\alpha M$和$\alpha N$，所以计算量变为：</p>
+
+<p><img src="/img/presentation/2019-06-10/15536015855921.jpg" alt="" /></p>
+
+<p>因为主要计算量在后一项，参数量大概减少了$\alpha$的平方倍。</p>
+
+<h4 id="resolution-multiplier">resolution multiplier</h4>
+
+<p>参数resolution multiplier主要是按比例降低特征图的大小，记为$\rho$，比如原来输入特征图是224x224，可以减少为192x192，加上resolution multiplier，Depthwise separable convolution的计算量为：</p>
+
+<p><img src="/img/presentation/2019-06-10/15536066228217.jpg" alt="" /></p>
+
+<p>要说明的是，resolution multiplier仅仅影响计算量，但是不改变参数量。如下图所示，Mult-Adds表示计算量，Parameters表示参数量。</p>
+
+<p><img src="/img/presentation/2019-06-10/15536067230306.jpg" alt="" /></p>
+
+<h4 id="精度结果比较">精度结果比较</h4>
+
+<p><img src="/img/presentation/2019-06-10/15536070402034.jpg" alt="" /></p>
+
+<!--# MobileNet V2
+MobileNet V1遗留的问题：
+* MobileNet V1的结构其实非常简单，论文里是一个非常复古的直筒结构，类似于VGG一样。这种结构的性价比其实不高，后续一系列的resnet，densenet等结构已经证明通过复用图像特征，使用concat/elementwise addition等操作进行融合，能极大提升网络的性价比。
+* Depthwise Separable Convolution 确实大大降低了计算量，并且再性能上也十分接近于标准卷积。但是实际使用的时候，我们发现Depthwise部分的kernel比较容易训废掉：训练完之后发现Depthwise训出来的kernel有不少是空的。当时我们认为，Depthwise每个kernel dim相对于普通Conv要小得多，过小的kernel_dim, 加上ReLU的激活影响下，使得神经元输出很容易变为0，所以就学废了。ReLU对于0的输出的梯度为0，所以一旦陷入0输出，就没法恢复了。我们还发现，这个问题在定点化低精度训练的时候会进一步放大。
+
+MobileNet V2的创新点
+* Inverted Residual Block: MobileNet V1没有利用著名的resnet，由于resnet的有效性，如果利用上resnet可能会得到精度上的极大提升。-->
+
+<hr />
+
+<h2 id="2heterogeneous-graph-convolutional-network">2.《Heterogeneous Graph Convolutional Network》</h2>
+<p><img src="/img/presentation/2019-06-10/1.JPG" alt="" />
+<img src="/img/presentation/2019-06-10/2.JPG" alt="" />
+<img src="/img/presentation/2019-06-10/3.JPG" alt="" />
+<img src="/img/presentation/2019-06-10/4.JPG" alt="" />
+<img src="/img/presentation/2019-06-10/5.JPG" alt="" />
+<img src="/img/presentation/2019-06-10/6.JPG" alt="" />
+<img src="/img/presentation/2019-06-10/7.JPG" alt="" />
+<img src="/img/presentation/2019-06-10/8.JPG" alt="" /></p>
+
+<h2 id="3-附件">3. 附件</h2>
+<p><a href="/img/presentation/2019-06-10/HGCN.pptx">HGCN.pptx</a></p>
+
+</div>
+
+
+            <div class="footer">
+            <div class="height:45px; background:#191c2a; color:#74819f; text-align:center; line-height:45px; margin-top:40px;">
+                <div style="margin:0 auto;width:700px;">
+                    <div style='float:left;'>
+                    版权所有 Copyright&copy;中国科学院计算机网络中心·大数据技术与应用发展部， 保留一切权利。<a href="http://beian.miit.gov.cn">(京ICP备09112257号-83)</a>
+                    </div>
+                    <script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/33/000/0000/60451603/CA330000000604516030030.js' type='text/javascript'%3E%3C/script%3E"));</script>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- /container -->
+
+        <!-- Support retina images. -->
+        <script type="text/javascript"
+                src="/js/srcset-polyfill.js"></script>
+    </body>
+</html>
