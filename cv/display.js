@@ -70,13 +70,13 @@ function displayAll(){
 function displayCS() {
   $(".normalpaper").removeClass("collapse out");
   $(".normalpaper").addClass("collapse in");
-  $(".cspaper").removeClass("collapse in");
+  $(".cspaper").removeClass("collapse out");
   $(".cspaper").addClass("collapse in");
 }
 
 function displayM() {
   $(".normalpaper").removeClass("collapse out");
   $(".normalpaper").addClass("collapse in");
-  $(".mpaper").removeClass("collapse in");
+  $(".mpaper").removeClass("collapse out");
   $(".mpaper").addClass("collapse in");
 }
