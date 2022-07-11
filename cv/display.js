@@ -66,3 +66,17 @@ function displayAll(){
   $(".classicpaper").removeClass("collapse in");
   $(".classicpaper").addClass("collapse in");
 }
+
+function displayCS() {
+  $(".normalpaper").removeClass("collapse out");
+  $(".normalpaper").addClass("collapse in");
+  $(".cspaper").removeClass("collapse in");
+  $(".cspaper").addClass("collapse in");
+}
+
+function displayM() {
+  $(".normalpaper").removeClass("collapse out");
+  $(".normalpaper").addClass("collapse in");
+  $(".mpaper").removeClass("collapse in");
+  $(".mpaper").addClass("collapse in");
+}
