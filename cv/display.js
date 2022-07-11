@@ -80,3 +80,10 @@ function displayM() {
   $(".mpaper").removeClass("collapse out");
   $(".mpaper").addClass("collapse in");
 }
+
+function displayCSX() {
+  $(".normalpaper").removeClass("collapse out");
+  $(".normalpaper").addClass("collapse in");
+  $(".csxpaper").removeClass("collapse out");
+  $(".csxpaper").addClass("collapse in");
+}
