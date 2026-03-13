@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <title>杜一</title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="display.css">
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="display.js"></script>
+    <script type="text/javascript">
+        $(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                console.log(this);
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+        });
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<a class="navbar-brand" href="#">Yi</a>-->
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active" ><a href="#">Home</a></li>
+                <li><a href="#education" class="scroll">教育&工作背景</a></li>
+                <li><a href="#project" class="scroll">项目</a></li>
+                <li><a href="#researchproject" class="scroll">科研项目</a></li>
+                <li><a href="#paper" class="scroll">科研成果</a></li>
+                <li><a href="#standard" class="scroll">参与标准</a></li>
+                <li><a href="#teach" class="scroll">教学活动</a></li>
+                <!--<li><a href="#teach" class="scroll">学生培养</a></li>-->
+                <li><a href="#social" class="scroll">社会兼职</a></li>
+                <li><a href="#activity" class="scroll">学术活动</a></li>
+                <li><a href="doc/cv_2018.pdf">个人简历</a></li>
+				<li><a href="../group_temp/index.html">团队主页(临时)</a></li>
+
+        <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">其它<span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="../course/DataVisualization/index.html">Data Visualization</a></li>
+        <li><a href="../course/HTML5/index.html">HTML, CSS and JavaScript</a></li>
+        <li><a href="../chinavis2015/index.html">ChinaVis 2015</a></li>
+      </ul>
+    </li>
+        <li><a href="index.html">EN</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+<div class="container" >
+    <div class="jumbotron" id="main">
+        <div class="row">
+            <div class="col-md-2" style="padding-top: 30px"><img src="img/yidu.png" style="width:150px">
+              <div style="padding-top:5px; padding-bottom:5px;">
+              <a href="https://www.linkedin.com/in/yiducn"><img src="img/Linkedin.svg" width="30px" height="30px" ></a>
+              <a href="https://www.github.com/yiducn"><img src="img/Github.svg" width="30px" height="30px"></a>
+              </div>
+            </div>
+            <div class="col-md-10" style="margin-top: 10px"><h2>杜 一 </h2>
+              我目前为中国科学院计算机网络信息中心大数据技术与应用发展部副主任，研究员，博士生导师，中国科学院青年创新促进会理事，CCF高级会员，国家优秀青年科学基金获得者，北京市科技新星，中心科技委员会委员。博士毕业于中国科学院软件研究所，曾赴普渡大学 VACCINE 实验室交流访问。主要研究兴趣在科技大数据知识图谱、大数据分析挖掘、AI for Science等。我同时在国科大杭州高等研究院智能学院负责大数据技术与系统教授工作室。
+              <br>
+              <br>
+              截至目前，我主持包括国家自然科学基金优秀青年科学基金、国家重点研发计划青年科学家项目等在内的科研项目二十余项，在国内外知名期刊会议发表论文70篇，授权发明专利23项。主导及参与的大数据项目，为国家自然科学基金委、中国科协、中国气象局等国家部委及中国科学院学部局、科发局、国际合作局、国家空间科学中心等院机构提供服务。
+              <br>
+              <br>
+              信息最后更新时间：2026年1月26日
+            </div>
+        </div>
+        <table class="table" id="education">
+            <tbody>
+            <tr>
+              <td>教育&工作背景
+              </td>
+              <td>
+              </td>
+            </tr>
+            <tr >
+                <td width="200px" >2023年10月 - 今</td>
+                <td>国科大杭州高等研究院智能科学与技术学院
+                    <br><a href="http://hias.ucas.ac.cn/">大数据技术与系统教授工作室 </a>首席教授
+                </td>
+            </tr>
+            <tr >
+                <td width="200px" >2019年7月 - 今</td>
+                <td>中国科学院计算机网络信息中心
+                    <br>期间：2019年7月-2021年5月:大数据技术与应用发展部 <a href="http://www.dviz.cn/">大数据知识工程实验室</a>主任
+                    <br>期间：2021年5月-今:大数据技术与应用发展部 副主任
+                </td>
+            </tr>
+            <tr >
+                <td width="200px" >2021年12月 - 今</td>
+                <td>中国科学院计算机网络信息中心，<a href="http://cnic.cas.cn/sourcedb_cnic_cas/zw/zjrc/dsdw/202107/t20210702_6125775.html">大数据技术与应用发展部</a><b>研究员</b>
+                    <br>主要研究方向: 数据挖掘、知识图谱
+                </td>
+            </tr>
+            <tr >
+                <td width="200px" >2015年12月 - 2021年12月</td>
+                <td>中国科学院计算机网络信息中心，<a href="http://cnic.cas.cn/sourcedb_cnic_cas/zw/zjrc/dsdw/202107/t20210702_6125775.html">大数据技术与应用发展部</a><b>副研究员</b>
+                    <br>主要研究方向: 时空数据可视分析、数据挖掘
+                </td>
+            </tr>
+            <tr>
+                <td width="200px" >2015年9月 - 2016年9月</td>
+                <td>普渡大学<a href="http://www.purdue.edu/discoverypark/vaccine/">可视分析实验室(VACCINE)</a><b>访问学者</b>
+                    <br>主要研究方向: 信息可视化，可视分析
+                    <br>合作导师: <a href="https://engineering.purdue.edu/~ebertd/">David Ebert</a>
+                </td>
+            </tr>
+            <tr>
+                <td width="200px" >2013年7月 - 2015年12月</td>
+                <td>中国科学院计算机网络信息中心，科学数据中心<b>助理研究员</b>
+                    <br>主要研究方向: 信息可视化, 人机交互
+                </td>
+            </tr>
+            <tr>
+                <td width="200px" >2008年9月 - 2013年7月</td>
+                <td>中国科学院软件研究所人机交互技术与智能信息处理实验室<b>博士</b>
+                    <br><i>E-UIDL: 一种移动计算环境下的用户界面描述语言</i>
+                    <br>指导老师: 戴国忠
+                    答辩委员: 华庆一, 史元春, 汪国平, 王志良, 山世光
+                </td>
+            </tr>
+            <tr>
+                <td width="200px" >2004年9月 - 2008年7月</td>
+                <td>山东大学软件学院<b>本科</b>（3/208）
+                    <br><i>笔式图形编辑框架的研究与应用 （山东大学优秀毕业论文）</i>
+                    <br>指导老师: 闫中敏, 滕东兴
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <table class="table" id="project">
+            <tbody>
+            <tr><td>项目（部分）</td><td></td></tr>
+            <tr>
+                <td width="200px" ><a href="img/proj_dkg_academician.png"><img src="img/infosdc-small.png"></a></td>
+                <td><b>国家基础学科公共数据中心信息科学分中心 (2023年10月-今)</b>
+                    <br>国家基础学科公共科学数据中心信息科学分中心致力于为自然科学和信息科学领域的科研人员提供与人工智能相关的标准数据集和特色数据集，以及算法和模型资源，为“人工智能+”的科研范式提供支持。 
+                    <br><b>技术:</b>大数据、知识图谱、大语言模型
+                    <br><b>平台地址:</b><a href="http://www.infosdc.cn/">点击进入</a>,<a href="img/infosdc.png">截图1</a>
+                </td>
+            </tr>
+            <tr>
+                <td width="200px" ><a href="img/proj_dkg_academician.png"><img src="img/proj_dkg_academician_small.png"></a></td>
+                <td><b>中国科学院学部工作局科技智库人才系统 (2020年10月-2023年3月)</b>
+                    <br>为中国科学院学部工作局提供智库人才数据治理与服务。 
+                    <br><b>技术:</b>大数据、数据治理、知识图谱
+                    <br><b>演示:</b><a href="http://10.0.88.46:8085/i/i">演示(内网)</a>,<a href="img/proj_dkg_academician.png">截图1</a>,<a href="img/proj_dkg_academician_2.png">截图2</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td width="200px" ><a href="img/proj_dkg_international.png"><img src="img/proj_dkg_international_small.png"></a></td>
+                <td><b>中国科学院国际合作局国际合作数据汇交和分析平台 (2019年10月-)</b>
+                    <br>为实现中国科学院国际合作局的智能化，对国际合作相关数据进行治理，构建国际合作领域知识图谱，并提供智能化服务。
+                    <br><b>技术:</b>大数据、数据治理、知识图谱
+                    <br><b>演示:</b><a href="http://10.0.90.42/">演示(内网)</a>,<a href="img/proj_dkg_international.png">截图1</a>,<a href="img/proj_dkg_international_2.png">截图2</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td width="200px" ><a href="img/proj_sts.png"><img src="img/proj_sts_small.png"></a></td>
+                <td><b>中国科学院科技合作智能化管理服务平台 (2019年8月至2020年6月)</b>
+                    <br>为中国科学院科技发展促进局构建科技合作智能化管理服务平台，引入院地合作成效、专利成果转移转化等数据，构建科技合作知识图谱。
+                    <br><b>技术:</b>大数据、图数据库、知识图谱
+                    <br><b>演示:</b><a href="http://10.0.88.36/home.html#/sts/">演示(内网)</a>,<a href="img/proj_sts.png">截图1</a>
+                </td>
+            </tr>
+
+            <tr id="labelDisplayOldProj" class="collapse in">
+                <th  colspan="2" style="text-align:center"> <label id="displayOldProject" onclick="displayOldProject()">点击显示更多</label></th>
+            </tr>
+
+            <tr class="oldproj collapse out">
+                <td width="200px" ><a href="img/nssc_1.png"><img src="img/nssc_1_small.png"></a></td>
+                <td><b>国家空间科学中心大数据管理与应用服务平台项目 (2019年4月至2020年4月)</b>
+                    <br>构建空间科学大数据知识管理平台，辅助决策者及管理人员快速了解领域科研态势。
+                    <br><b>技术:</b>大数据、图数据库、网络分析 
+                    <br><b>演示:</b><a href="http://10.0.88.161:81/science">演示(内网)</a>,<a href="https://rdss.nssdc.ac.cn/">演示(公网)</a>,<a href="img/nssc_1.png">截图1</a>,<a href="img/nssc_2.png">截图2</a>,<a href="img/nssc_3.png">截图3</a>
+                </td>
+            </tr>
+            <tr class="oldproj collapse out">
+                <td width="200px" ><a href="img/cast_1.png"><img src="img/cast_1_small.png"></a></td>
+                <td><b>中国科协计算机与人工智能大数据知识管理服务平台 (2019年1月至2020年1月)</b>
+                    <br>构建计算机与人工智能领域的大数据知识管理平台，辅助决策者及管理人员快速了解科研态势。
+                    <br><b>技术:</b>爬虫、大数据、图数据库
+                    <br><b>演示:</b><a href="http://10.0.88.77:7777/sensor/0FrontPage/frontpage.html">演示(内网)</a>,<a href="img/cast_1.png">截图1</a>,<a href="img/cast_2.png">截图2</a>,<a href="img/cast_3.png">截图3</a>
+                </td>
+            </tr>
+            <tr class="oldproj collapse out">
+                <td width="200px" ><a href="screenshot/proj_tobacco_demo1.png"><img src="img/proj_tobacco_demo1_small.png"></a></td>
+                <td><b>烟草科技知识图谱 (2018年9月至2019年12月)</b>
+                    <br>面向烟草科技从业人员，构建领域大数据知识图谱。
+                    <br><b>技术:</b>PiFlow(大数据流水线)、Neo4J
+                    <br><b>演示:</b><a href="http://10.0.88.4">演示(内网)</a>,<a href="screenshot/proj_tobacco_demo1.png">截图</a>
+                </td>
+            </tr>
+            <tr class="oldproj collapse out">
+                <td width="200px" ><a href="img/proj_nsfcbigdata.png"><img src="img/proj_nsfcbigdata_small.png"></a></td>
+                <td><b>国家自然科学基金知识大数据管理服务平台 (2017年至2018年一期,2019年-2023年二期)</b>
+                    <br>从国家自然科学基金委（NSFC）长期积累的相关数据出发，构建大数据管理平台，提供多维、网络分析与挖掘功能，实现高效的多维统计及知识挖掘。以“项目－成果－人员”为核心，构建了由近两千万实体及上亿条关系的知识网络。
+                    <br><b>技术:</b>Hadoop, Ambari, Neo4J, GraphX, Apache Nifi, Apache Kylin
+                    <br><b>演示:</b><a href="screenshot/proj_nsfcbigdata_demo1.png">截图(架构简图)</a>,<a href="http://kd.nsfc.gov.cn">演示1</a>,<a href="http://ir.nsfc.gov.cn">演示2</a>,<a href="http://output.nsfc.gov.cn">演示3</a>
+                </td>
+            </tr>
+            <tr class="oldproj collapse out">
+                <td width="200px" ><a href="img/proj_hangdaobigdata.png"><img src="img/proj_hangdaobigdata_small.png"></a></td>
+                <td><b>航道大数据报警优化 (2016年10月－2017年1月)</b>
+                    <br>针对航标数据传统基于规则的报警方法效率较低的问题，给出结合传统机器学习方法与领域知识的二次报警优化系统。
+                    <br><b>技术:</b>Python、随机森林
+                    <br><b>演示:</b>TBD
+                </td>
+            </tr>
+            <tr class="oldproj collapse out">
+                <td width="200px" ><a href="img/proj_corvis.png"><img src="img/proj_corvis_small.png"></a></td>
+                <td><b>空气污染相关性可视分析系统</b>
+                    <br>基于空气污染每小时监测数据及气象数据，设计可视分析系统。该系统帮助分析师快速定位和发现异常，并通过新的可视化方法，判断空气污染发生在时间与空间上的相关性，从而辅助分析师或领域专家提出可能的科学假设。
+                    <br><b>技术:</b>Javascript, D3.js
+                    <br><b>论文及演示:</b><a href="img/proj_corvis.png">截图</a>
+                </td>
+            </tr>
+            <tr class="oldproj collapse out">
+                <td width="200px" ><a href="img/proj_airvis.png"><img src="img/proj_airvis_small.png"></a></td>
+                <td><b>空气质量可视分析系统</b>
+                    <br>针对全国空气质量检测总站每小时监测数据设计并实现可视分析系统，系统结合了趋势图、地图、日历图等可视化方法，并针对长时间序列在呈现效率及精度上存在的问题，借鉴编程语言的日期处置方法，给出一种自适应趋势图呈现方法.
+                    <br><b>技术:</b>Javascript, D3.js
+                    <br><b>论文及演示:</b><a href="http://www.mdpi.com/1424-8220/17/1/30/html">论文</a>
+                </td>
+            </tr>
+            <tr  class="oldproj collapse out">
+                <td width="200px" ><a href="img/proj1.png"><img src="img/proj1_small.png"></a></td>
+                <td><b>数据可视化平台(DVIZ)</b>
+                    <br>类似ManyEyes的数据可视化平台，引入了可视化项目的概念，支持九种不同的数据类型、五种布局类型、十一种可视化呈现方式，以及对可视化图形之间关联的支持.
+                    <br><b>技术:</b>Java, ECharts, D3.js
+                    <br><b>论文及演示:</b><a href="http://www.dviz.cn/dviz">在线系统</a>
+					<a href="screenshot/dviz.gif">截图</a>
+          <a href="http://www.dviz.cn/dviz/gallary/">结果</a>
+          <a href="img/proj1_2.png">影响力</a>
+          <a href="https://youtu.be/H_K9Q6WanRU">视频</a>
+                </td>
+            </tr>
+
+            <tr class="oldproj collapse out">
+                <td width="200px"><a href="img/proj2.png"><img src="img/proj2_small.png"></a></td>
+                <td><b>H7N9 可视分析系统</b>
+                    <br>对2013年至今的禽流感数据进行可视化.该项目通过Google Map及Heatmap.js实现病例的个体分布与区域分布的可视化，通过基于D3.js的平行坐标实现可视化的数据过滤与分析.
+                    <br><b>技术:</b>Java, D3.js
+                    <br><b>论文及演示:</b>
+					<a href="http://www.dviz.cn/h7n9/en/index.html">在线系统</a>
+					<a href="screenshot/h7n9.gif">截图</a>
+          <a href="doc/2015_poster.pdf">论文1</a>
+          <a href="doc/2015_dviz.pdf">论文2</a>
+                </td>
+            </tr>
+            <tr class="oldproj collapse out">
+                <td width="200px"><a href="img/proj3.png"><img src="img/proj3_small.png"></a></td>
+                <td><b>抗辐射轨道卫星演示系统</b>
+                    <br>针对空间辐射数据集轨道数据，使用World Wind Java SDK开发可视化系统.系统通过二维与三维视图结合，以及区域填充图等方式对卫星轨道及相关辐射带进行可视化.
+                    <br><b>技术:</b>Java, WorldWind Java SDK
+                    <br><b>论文及演示:</b><a href="screenshot/orbit.png">截图1</a>
+                    <a href="screenshot/orbit2.png">截图2</a>
+                    <a href="screenshot/orbit3.gif">截图3</a>
+                    <a href="https://youtu.be/nE8sE-f6MyE">演示</a>
+                </td>
+            </tr>
+            <tr class="oldproj collapse out">
+                <td width="200px"><a href="img/proj4.png"><img src="img/proj4_small.png"></a></td>
+                <td><b>食品质量可视分析系统</b>
+                    <br>对某公司500余类食品的抽检数据进行可视化.该系统使用ECharts的地图、趋势图等方式，结合不同的交互逻辑的设计，实现对检测质量的可视分析.
+                    <br><b>技术:</b>Java, ECharts, MongoDB
+                    <br><b>论文及演示:</b>
+                </td>
+            </tr>
+            <tr class="oldproj collapse out">
+                <td width="200px"><a href="img/proj5.png"><img src="img/proj5_small.png"></a></td>
+                <td><b>轨道数据可视化系统</b>
+                    <br>针对32颗气象卫星的轨道数据及卫星相互关系产生的事件数据，使用World Wind Java SDK开发轨道可视化系统.
+                    <br><b>技术:</b>Java, WorldWind Java SDK
+                    <br><b>论文及演示:</b><a href="screenshot/o1.png">截图1</a>
+                    <a href="screenshot/o2.png">截图2</a>
+                    <a href="screenshot/o3.png">截图3</a>
+                    <a href="screenshot/o4.png">截图4</a>
+                </td>
+            </tr>
+            <tr class="oldproj collapse out">
+                <td width="200px"><a href="img/proj6.png"><img src="img/proj6_small.png"></a></td>
+                <td><b>出租车GPS数据处理与可视化系统</b>
+                    <br>对100亿条出租车GPS数据进行处理及可视化.通过对数据进行合理分割、使用分片机制搭建MongoDB集群、后台搭建并行的R处理环境等方式提高数据的检索性能，前端使用OpenLayers进行基于地图的数据呈现.
+                    <br><b>技术:</b>Java, MongoDB, OpenLayers
+                    <br><b>论文及演示:</b><a href="screenshot/geo1.png">截图1</a>
+                    <a href="screenshot/geo2.png">截图2</a>
+                    <a href="screenshot/geo3.png">截图3</a>
+                    <a href="doc/2014platform.pdf">论文</a>
+                </td>
+            </tr>
+            <tr class="oldproj collapse out">
+                <td width="200px"><a href="img/proj7.png"><img src="img/proj7_small.png"></a></td>
+                <td><b>移动环境下用户界面描述语言的研究</b>
+                    <br>该项目设计一种模块化、可扩展的用户界面描述语言；并提出基于该描述语言的用户界面生成框架及相关的界面生成算法.界面设计及生成使用基于Eclipse的RCP开发，生成C语言与Java语言代码.
+                    <br><b>技术:</b>Java, C
+                    <br><b>论文及演示:</b><a href="screenshot/tools.png">设计工具截图1</a>
+                    <a href="screenshot/tools2.png">设计工具截图2</a>
+                    <a href="screenshot/generated.png">生成工具截图1</a>
+                    <a href="screenshot/generated2.png">生成工具截图2</a>
+                    <a href="screenshot/generated3.png">生成工具截图3</a>
+                    <a href="screenshot/generated4.png">生成工具截图4</a>
+                </td>
+            </tr>
+            <tr class="oldproj collapse out">
+                <td width="200px"><a href="img/projGephi.png"><img src="img/projGephi_small.png"></a></td>
+                <td><b>Gephi社会网络数据导入插件</b>
+                    <br>Gephi是一个图可视化软件，使用Java语言编写，能够实现图的导入、呈现、导出等基本操作，还包括图布局算法、图节点聚类算法、统计算法等.
+                    <br><b>技术:</b>Java, Netbeans
+                    <br><b>论文及演示:</b><a href="screenshot/projGephi2.png">截图1</a>
+                    <a href="screenshot/projGephi3.png">截图2</a>
+         
+                </td>
+            </tr>
+            <tr class="oldproj collapse out">
+                <td width="200px"><a href="img/proj8.png"><img src="img/proj8_small.png"></a></td>
+                <td><b>基于嵌套圆的文件管理系统</b>
+                    <br>Desc.
+                    <br><b>技术:</b>C++,OpenGL
+                    <br><b>论文及演示:</b><a href="http://youtu.be/8mTt9-gF_f8">演示</a>
+                    <a href="doc/bigdatasmallui.pdf">论文</a>
+                </td>
+            </tr>
+            <tr class="oldproj collapse out">
+                <td width="200px"><a href="img/proj10.png"><img src="img/proj10_small.png"></a></td>
+                <td><b>基于Daisy的工厂生产流程可视分析系统</b>
+                    <br>TODO
+                    <br><b>技术:</b>Java, RCP, Prefuse
+                    <br><b>论文及演示:</b>
+                    <a href="http://youtu.be/J28WFJgpDac">演示</a>
+                    <a href="doc/2013_daisy.pdf">论文</a>
+                </td>
+            </tr>
+            <tr class="oldproj collapse out">
+                <td width="200px"><a href="img/proj9.png"><img src="img/proj9_small.png"></a></td>
+                <td><b>Daisy</b>
+                    <br>一款可视分析工具箱，实现了数据的提取、数据的展示、以及数据的分析功能.已成功应用于某两家服装生产工厂及一家地理信息系统公司.
+                    <br><b>技术:</b>Java, RCP, Prefuse
+                    <br><b>论文及演示:</b>
+                    <a href="http://youtu.be/52prBamNB0k">演示</a>
+                    <a href="doc/2013_daisy.pdf">论文</a>
+                </td>
+            </tr>
+            <!-- 没有必要单独功能来隐藏历史项目
+            <tr id="labelHideOldProj" class="collapse out">
+                <td width="0px" ></td>
+                <td> <label id="hideOldProject" onclick="hideOldProject()">点击隐藏历史项目</label></td>
+            </tr>
+          -->
+            </tbody>
+        </table>
+
+        <!--research project-->
+        <!-- <table class="table">
+            <tbody>
+            <tr><td>学术&技术分享</td><td></td></tr>
+            <tr>
+                <td><b><a href="slides/20230411-dcai.pdf">20230411，中国科学院青年创新促进会2022年学术年会:“Data-Centric-AI”助力材料科学</a></b></td>
+            </tr>
+            <tr>
+                <td><b><a href="http://www.nanoctr.cas.cn/">20220315:领域知识图谱及在科学领域的应用探讨</a></b></td>
+            </tr>
+            <tr>
+                <td><b><a href="http://scst.suda.edu.cn/43/0d/c11203a475917/page.htm">20211209:面向领域大数据的知识图谱构建</a></b></td>
+            </tr>
+            <tr>
+                <td><b><a href="slides/20200102_dkg.pdf">20200102:大数据领域知识图谱：项目与技术</a></b></td>
+            </tr>
+            <tr>
+                <td><b><a href="slides/20200430_dkg.pdf">20200430:领域知识图谱构建与应用</a></b></td>
+            </tr>
+<tr>
+                <td><b><a href="slides/20200602_scikg.pdf">20200602:大数据管理服务平台：技术与实践</a></b></td>
+            </tr>
+            </tbody>
+        </table> -->
+        <!--research project-->
+        <table class="table" id="researchproject">
+            <tbody>
+            <tr><td>科研项目（部分）</td><td></td></tr>
+            <tr>
+                <td><b>某知识服务平台知识图谱总体集成</b>. 
+                     (<b>负责人,2025-2025</b>)</td>
+            </tr>
+            <tr>
+                <td><b>基于知识图谱与要素化大模型的基础研究科技成果评价体系及验证</b>.
+                    国家自然科学基金专项项目（与中国科学院文献情报中心合作） (<b>负责人,2025-2025</b>)</td>
+            </tr>
+            <tr>
+                <td><b>SLC家族成员介导下肿瘤微环境知识图谱构建技术</b>.
+                    北京市科技新星交叉合作项目（与北京大学第一医院合作） (<b>负责人,2024-2026</b>)</td>
+            </tr>
+            <tr>
+                <td><b>统一专家库建设与支持</b>.
+                    中国科学院其他任务 (<b>负责人,2023-2025</b>)</td>
+            </tr>
+            <tr>
+                <td><b>科技大数据知识图谱</b>.
+                    国家自然科学基金优秀青年科学基金项目 (<b>负责人,2024-2026</b>)</td>
+            </tr>
+            <tr>
+                <td><b>基于领域知识图谱的铜基CO2催化效果预测方法研究</b>.
+                    所级专项 (<b>负责人,2022-2023</b>)</td>
+            </tr>
+            <tr>
+                <td><b>基于领域知识图谱的光电催化材料挖掘软件</b>.
+                    国家重点研发计划(青年项目) (<b>负责人,2023-2025</b>)</td>
+            </tr>
+            <tr>
+                <td><b>中华民族神话数据库</b>.
+                    中国科学院网络安全和信息化专项 (<b>参与人,2022-2023</b>)</td>
+            </tr>
+            <tr>
+                <td><b>数字出版与集成服务平台</b>.
+                    中国科学院科学传播专项 (<b>总体集成负责人,2022-2023</b>)</td>
+            </tr>
+            <tr>
+                <td><b>某领域行为图谱构建</b>.
+                    创新特区项目 (<b>课题负责人,2021-2022</b>)</td>
+            </tr>
+            <tr>
+                <td><b>某工业领域知识图谱平台</b>.
+                    工业互联网创新发展工程 (<b>项目负责人,2020-2022</b>)</td>
+            </tr>
+             <tr>
+                <td><b>大规模时空数据相关性可视分析关键技术研究</b>.
+                    北京市自然科学基金面上项目 (<b>项目负责人,2021-2023</b>)</td>
+            </tr>
+            <tr class="oldrproj  collapse out">
+                <td><b>某领域文本挖掘与知识图谱构建</b>.
+                    某研究院项目 (<b>项目负责人,2020-2021</b>)</td>
+            </tr>
+            <tr class="oldrproj  collapse out">
+                <td><b>科技智库人才系统(一期、二期）</b>.
+                    中国科学院学部工作局 (<b>项目负责人,2020-2023</b>)</td>
+            </tr>
+            <tr class="oldrproj  collapse out">
+                <td><b>某领域表示方法研究</b>.
+                    创新特区项目 (<b>课题负责人,2020-2021</b>)</td>
+            </tr>
+            <tr class="oldrproj  collapse out">
+                <td><b>商标数据分析应用及传播利用</b>.
+                    国家知识产权局商标局委托 (<b>项目负责人,2020-2021</b>)</td>
+            </tr>
+            <tr class="oldrproj  collapse out">
+                <td><b>基于知识图谱的科技合作智能化管理服务平台</b>.
+                    中国科学院委托及STS项目 (<b>项目负责人、参与人,2020-2023</b>，一期结题，二期启动)</td>
+            </tr>
+            <tr class="oldrproj  collapse out">
+                <td><b>基于科技领域知识图谱的成果评估方法研究</b>.
+                    北京市科技新星计划 (<b>项目负责人,2020-2022</b>)</td>
+            </tr>
+            <tr class="oldrproj  collapse out">
+                <td><b>国家自然科学基金成果开放共享政策研究与平台架构设计</b>.
+                    国家自然科学基金项目 (<b>项目负责人,2020-2021</b>)</td>
+            </tr>
+            <tr class="oldrproj  collapse out">
+                <td><b>基于群智理论的创新方法新系统研究与应用示范</b>.
+                    科技部创新方法工作专项 (<b>执行负责人、课题负责人,2020-2021</b>)</td>
+            </tr>
+            <tr class="oldrproj  collapse out">
+                <td><b>标识解析公共服务支撑平台（工业互联网领域知识图谱）</b>.
+                    工业互联网创新发展工程 (<b>项目参与人,2020-2022</b>)</td>
+            </tr>
+            <tr>
+                <td><b>国际合作数据汇交和应用示范</b>.
+                    中国科学院国际合作局 (<b>参与人,2019-2021</b>，一期结题，二期启动)</td>
+            </tr>
+            <tr class="oldrproj  collapse out">
+                <td><b>烟草科技知识图谱构建与应用</b>.
+                    中国烟草总公司重大专项 (<b>项目负责人,2018-2020</b>，结题)</td>
+            </tr>
+            <tr class="oldrproj  collapse out">
+                <td><b>制造业跨域异构数据智能治理技术研究(主数据语义融合与分布伸缩可配置存储计算技术)</b>.
+                    国家重点研发计划云计算和大数据专项 (<b>任务参与,2018-2020</b>)</td>
+            </tr>
+            <tr>
+                <td><b>面向领域大数据的知识图谱构建</b>.
+                    国家自然科学基金重点项目 (<b>执行负责人,2019-2023</b>)</td>
+            </tr>
+            <tr>
+                <td><b>食源性疾病监测、溯源与预警技术研究(基于多源数据的食源性疾病实时预警技术体系研究)</b>.
+                    国家重点研发计划 (<b>课题负责人,2018-2021</b>)</td>
+            </tr>
+            <tr class="oldrproj  collapse out">
+                <td><b>基于Overview＋Detail的交互式时空数据可视化方法研究</b>.
+                    中国科学院知识创新工程 (<b>项目负责人,2015-2016</b>，结题)</td>
+            </tr>
+            <tr class="oldrproj  collapse out">
+                <td><b>模型驱动的大规模时空数据可视化开发方法研究</b>.
+                    国家自然科学基金青年项目 (<b>项目负责人,2015-2017</b>，结题)</td>
+            </tr>
+            <tr class="oldrproj  collapse out">
+                <td><b>城市综合评价技术研发与应用</b>.
+                    中国科学院科技服务网络计划（STS）(项目参与人,2015-2017，结题)</td>
+            </tr>
+
+            <tr id="labelDisplayOldRProj" class="collapse in">
+                <td style="text-align:center"> <label id="displayOldRProject" onclick="displayOldRProject()">点击显示更多</label></td>
+            </tr>
+
+            <tr class="oldrproj  collapse out">
+                <td><b>领域云系统虚拟管理技术与虚拟管理系统（高寒环境联合监测研究云的建设与应用子课题）</b>.
+                    中国科学院科研信息化项目(项目参与人,2013-2015，结题)</td>
+            </tr>
+            <tr class="oldrproj  collapse out">
+                <td><b>面向非常规突发事件应急管理的大数据时空可视化服务研究</b>.
+                    国家自然科学基金重大研究计划培育项目 (项目参与人,2014-2015，结题)</td>
+            </tr>
+            <tr class="oldrproj  collapse out">
+                <td><b>基于真实隐喻的儿童交互式学习环境研究</b>.
+                    国家自然科学基金青年项目 (项目参与人，结题)</td>
+            </tr>
+            <tr class="oldrproj  collapse out">
+                <td><b>图文混合笔输入文档分析与识别的理论与方法研究</b>.
+            国家自然科学基金面上项目 (项目参与人，结题)</td>
+            </tr>
+            <tr class="oldrproj  collapse out">
+                <td><b>基于设备属性融合的人机交互技术研究</b>.
+            国家自然科学基金海外及港澳学者合作研究基金 (项目参与人，结题)</td>
+            </tr>
+            <tr class="oldrproj  collapse out">
+                <td><b>面向多设备的个人信息管理的研究</b>.
+            国家自然科学基金青年项目 (项目参与人，结题)</td>
+            </tr>
+            <tr class="oldrproj  collapse out">
+                <td><b>面向视频语义描述与交互的草图界面关键技术研究</b>.
+            国家自然科学基金面上项目 (项目参与人，结题)</td>
+            </tr>
+            <tr class="oldrproj  collapse out">
+                <td><b>Reality-based Interaction用户界面模型和评估方法研究</b>.
+            国家自然科学基金面上项目 (项目参与人，结题)</td>
+            </tr>
+            <tr class="oldrproj  collapse out">
+                <td><b>基于手写设备的在线笔迹智能理解和交互技术研究</b>.
+            国家自然科学基金青年项目 (项目参与人，结题)</td>
+            </tbody>
+
+            <!-- 没有必要单独功能来隐藏历史项目
+            <tr id="labelHideOldRProj" class="collapse out">
+                <td> <label id="hideOldRProject" onclick="hideOldRProject()">点击隐藏历史科研项目</label></td>
+            </tr>
+            -->
+        </table>
+
+        <!--papers-->
+<!--        <nav class="navbar navbar-default" role="navigation" id="paper">
+            <div id="" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#education">Conference Papers</a></li>
+                    <li><a href="#project" >Journal Articles</a></li>
+                    <li><a href="#paper">Papers</a></li>
+                    <li><a href="#education">Contact</a></li>
+                    <li><a href="#cv" >CV</a></li>
+
+                </ul>
+            </div>
+        </nav>-->
+        <table class="table" id="paper">
+            <tbody>
+                <tr><td>论文</td>
+                  <td style="text-align: center">
+                    <!-- <button onclick="displayOnlyNewPaper()">仅显示最新论文</button> -->
+                    <!-- <button onclick="displayOnlyClassicPaper()">仅显示代表性论文</button> -->
+                    <!-- <button onclick="displayAll()">显示所有论文</button> -->
+                    <button onclick="displayCS()">计算机科学(大数据、知识图谱)</button>
+                    <button onclick="displayCSX()">大数据+X</button>
+                    <button onclick="displayM()">管理科学(图书情报)</button>
+                  </td>
+                </tr>
+                <tr>
+                    <td width="200px" style="padding-top: 30px;"><b>期刊论文</b></td>
+                    <td>
+                    <span class="normalpaper cspaper"><br>Ludi Wang, Hexing Han, Yufeng Liu, Zhiyuan Ning, Yujie Ma, Haidan Wang, Jinling Xu, Qiansheng Huang, Wenjuan Cui, Yuanchun Zhou, Yang Gao, <b>Bin Wang</b>*, <b>Yi Du</b>*, <a href="http://doi.org/10.1002/advs.202520587"><b>MicrobeDiscover: A Knowledge Graph–Enabled AI Framework for Identifying Microbes for Inorganic Nanomaterial Biosynthesis</b></a>,Advanced Science, 2026.  (SCI IF:15.6,JCR Q1,中科院一区Top)<br></span>
+
+                    <span class="normalpaper cspaper"><br>Yujie Ma, Yang Gao, Ludi Wang, Ming Chen, Wenjuan Cui, <b>Bin Wang</b>*, <b>Yi Du</b>*, <a href="https://doi.org/10.59717/j.xinn-inform.2025.100013"><b>Accelerating materials discovery through active learning: Methods, challenges and opportunities</b></a>,The Innovation Informatics, 2025. <br></span>
+
+                    <span class="normalpaper cspaper"><br>Yujie Ma, Ludi Wang, Wenjuan Cui, Yuanchun Zhou, <b>Yi Du</b>*, <a href="https://doi.org/10.1109/TCYB.2025.3633283"><b>Preference-Aware Bayesian Optimization for Interactive Decision Making</b></a>,IEEE Transactions on Cybernetics, 2025. (SCI IF:10.5,JCR Q1,中科院一区Top)<br></span>
+
+                    <span class="normalpaper cspaper"><br>Jiamin Huang, Haidan Wang, Ludi Wang, Yanhong Chang*, Yang Gao*, <b>Yi Du</b>*, Bin Wang*, <a href="http://doi.org/10.1002/adfm.202518997"><b>Integrating machine learning insights in membrane electrode assembly for CO2 electrolysis</b></a>,Advanced Functional Materials, 2025. (SCI IF:19.4,JCR Q1,中科院一区Top)<br></span>
+
+                    <span class="normalpaper cspaper"><br>Ludi Wang, Xueqing Chen, <b>Yi Du</b>, Yuanchun Zhou, Yang Gao*, Wenjuan Cui*, <a href="https://link.springer.com/article/10.1007/s13042-024-02473-0"><b>CataLM: empowering catalyst design through large language models </b></a>,International Journal of Machine Learning and Cybernetics, 2025. (SCI IF:2.7, JCR Q3,中科院四区)<br></span>
+
+                    <span class="normalpaper cspaper"><br>Jingmin An, Shuyu Zhang, Juan Wu, Haolin Chen, Guoshi Xu, Yifan Hou, Ruoyu Liu, Na Li, Wenjuan Cui, Xin Li*, <b>Yi Du</b>*, Qi Gu*, <a href="https://pubs.rsc.org/en/content/articlelanding/2024/lc/d3lc01020a"><b>Assessing bioartificial organ function: the 3P model framework and its validation </b></a>,Lab on a Chip, 2024.(SCI IF:5.8, JCR Q1,中科院二区) <br></span>
+
+                    <span class="normalpaper cspaper"><br>Meng Xiao, Min Wu, Ziyue Qiao*, Yanjie Fu, Zhiyuan Ning, <b>Yi Du</b>*, Yuanchun Zhou, <a href="https://dl.acm.org/doi/10.1145/3671149"><b>Interdisciplinary Fairness in Imbalanced Research Proposal Topic Inference: A Hierarchical Transformer-based Method with Selective Interpolation </b></a>,ACM Transactions on Knowledge Discovery from Data, 2024. ( CCF Rank B, SCI IF:4.0, JCR Q1,中科院三区)<br></span>
+
+                    <span class="normalpaper cspaper"><br>Wentao Cui, Meng Xiao, Ludi Wang, Xuezhi Wang, <b>Yi Du</b>*, Yuanchun Zhou, <a href="https://rdcu.be/dO7ik"><b>Automated Taxonomy Alignment via Large Language Models: Bridging the Gap between Knowledge Domains </b></a>,Scientometrics, 2024. (Accepted, SCI IF:3.5,JCR Q1, also indexed by SSCI)<br></span>
+
+                    <span class="normalpaper cspaper"><br>Xueqing Chen, Yang Gao, Ludi Wang, Wenjuan Cui, Jiamin Huang,<b>Yi Du</b>*, Bin Wang*, <a href="https://www.nature.com/articles/s41597-024-03180-9"><b>Large language model enhanced corpus of CO2 reduction electrocatalysts and synthesis procedures </b></a>,Scientific Data, 2024. (SCI IF:8.5,JCR Q1,中科院二区)<br></span>
+
+                    <span class="normalpaper cspaper"><br>Jingmin An, Wenjuan Cui, Haolin Chen, Juan Wu, Yishuang Liang, Na Li, <b>Yi Du</b>*, Shuyu Zhang*, Qi Gu* <a href="https://accscience.com/journal/IJAMD/articles/online_first/1215"><b>Manufacturing multi-organs database: A comprehensive, predictive, and analytical biofabrication database </b></a>,International Journal of AI for Materials and Design, 2024.<br></span>
+ 
+                    <span class="normalpaper cspaper"><br>王卫军,宁致远,董昊,乔子越,<b>杜一</b>*,周园春, <a href="https://qbxb.istic.ac.cn/CN/abstract/abstract750.shtml"><b>基于语义相似关系的学科交叉主题识别方法 </b></a>,情报学报, 2024. (录用,FMS T1)<br></span>
+
+                    <span class="normalpaper cspaper"><br>Yang Gao, Ludi Wang, Xueqing Chen, <b>Yi Du</b>*, Bin Wang*, <a href="https://pubs.acs.org/doi/10.1021/acscatal.3c00759"><b>Revisiting electrocatalyst design by a knowledge graph of Cu-based catalysts for CO2 reduction </b></a>,ACS Catalysis, 2023. (SCI IF:13.7,JCR Q1,中科院一区Top)<br></span>
+
+                    <span class="normalpaper cspaper"><br>叶旭, <b>杜一</b>, 崔文娟, 沈俊杰, 谢靖, 王露笛, <a  href=""><b>机器学习技术在眼健康领域的应用</b></a>,数据与计算发展前沿, 2023.<br></span>
+
+                    <span class="normalpaper cspaper"><br>王京, 熊惠, 其乐格乐, <b>杜一</b>, 周园春, <a href="https://doi.org/10.11922/11-6035.csd.2023.0039.zh"><b>中国常见神话人物起源母题数据集 </b></a>,中国科学数据, 2023. <br></span>
+                        
+                    <span class="normalpaper cspaper"><br>Ludi Wang, Yang Gao, Xueqing Chen, Wenjuan Cui, Yuanchun Zhou,Xinying Luo, Shuaishuai Xu,<b>Yi Du</b>*, Bin Wang*, <a href="https://doi.org/10.1038/s41597-023-02089-z"><b>A corpus of CO2 electrocatalytic reduction process extracted from the scientific literature </b></a>,Scientific Data, 2023. (SCI IF:8.5,JCR Q1,中科院二区)<br></span>
+
+                    <span class="normalpaper cspaper"><br>Meng Xiao, Ziyue Qiao, Yanjie Fu, Hao Dong, <b>Yi Du</b>*, Pengyang Wang, Hui Xiong, Yuanchun Zhou*, <a href="https://ieeexplore.ieee.org/document/10052697"><b>Hierarchical Interdisciplinary Topic Detection Model for Research Proposal Classification </b></a>,IEEE Transactions on Knowledge and Data Engineering, 2023. (CCF Rank A，SCI IF:9.6,JCR Q1,中科院一区Top)<br></span>
+                    
+                    <span class="normalpaper cspaper"><br>Ziyue Qiao, Pengyang Wang, Pengfei Wang, Zhiyuan Ning, Yanjie Fu, <b>Yi Du</b>, Yuanchun Zhou*, Jianqiang Hua, Xian-sheng Hua, Hui Xiong*, <a href="https://dl.acm.org/doi/pdf/10.1145/3577033"><b>A Dual-Channel Semi-Supervised Learning Framework on Graphs via Knowledge Transfer and Meta-Learning</b></a>,ACM Transactions on the Web, 2023.(CCF Rank C，SCI IF:3.6,JCR Q1, 中科院四区)<br></span>
+
+                    <!--<span class="normalpaper cspaper"><br>童昭*, 王露笛, 朱小杰, <b>杜一</b> <a href="http://www.jfdc.cnic.cn/CN/10.11871/jfdc.issn.2096-742X.2022.05.013"><b>基于预训练模型的军事领域命名实体识别研究</b></a>, 数据与计算前沿,2022,4(5).<br></span> -->
+
+                    <span class="normalpaper cspaper"><br>申志豪,李娜,尹世豪*,<b>杜一</b>,胡良霖, <a href=""><b>基于TPA-Transformer的机票价格预测</b></a>, 数据与计算前沿,2022.<br></span>
+
+                    <span class="normalpaper mpaper"><br>王卫军, 宁致远, <b>杜一</b>*,周园春, <a href=""><b>基于多标签分类的科技文献学科交叉研究性质识别</b></a>, 数据分析与知识发现, 2022.<br></span>
+                    
+                    <span class="normalpaper cspaper"><br>Ziyue Qiao,Yanjie Fu,Pengyang Wang,Meng Xiao,Zhiyuan Ning,<b>Yi Du</b>*,Yuanchun Zhou, <a href="https://ieeexplore.ieee.org/document/9716794"><b>RPT: Toward Transferable Model on Heterogeneous Researcher Data via Pre-Training</b></a>, IEEE Transactions on Big Data, 2022.(CCF Rank C, SCI IF:5.7,JCR Q1, 中科院二区)<br></span>
+
+                    <span class="normalpaper mpaper"><br>范英杰,吕栋,李东,<b>杜一</b>,韩宇*, <a href=""><b>构建国家科研论文和科技信息高端交流平台的政策与路径探析</b></a>, 图书与情报, 2021, 6.<br></span>
+
+                    <span class="normalpaper mpaper"><br>李东,于笑丰,<b>杜一</b>*,刘静羽, <a href=""><b>国家自然科学基金资助成果开放共享平台</b></a>, 中国科学基金, 2021, 05.<br></span>
+                    
+                    <span class="normalpaper mpaper"><br>王卫军,李成赞,郑晓欢,褚大伟,姜璐璐,陈昕,<b>杜一</b>,周园春*, <a href="https://doi.org/10.11922/csdata.2021.0019.zh"><b>全球科学数据出版发展态势分析</b></a>, 中国科学数据, 2021, 6(3), 2021.<br></span>
+
+                    <span class="normalpaper cspaper"><br>Farah Deeba#, Fayaz A. Dharejo#, Muhammad Zawish, Fida H. Memon, Kapal Dev, Rizwan A. Naqvi, Yuanchun Zhou*, <b>Yi Du</b>, <a href="http://doi.org/10.1002/int.22627"><b>A novel image dehazing framework for robust vision-based intelligent systems</b></a>, International Journal of Intelligent Systems, 2021.(SCI IF:8.7, JCR Q1)<br></span>
+
+                    <span class="normalpaper cspaper"><br><b>Yi Du</b>*, Yunchang Guo, <a href="https://www.sciencedirect.com/science/article/abs/pii/S0956713521005867"><b>Machine learning techniques and research framework in foodborne disease surveillance system</b></a>, Food Control, 131:108448, 2021.(SCI IF:5.55, JCR Q1)<br></span>
+
+                    <span class="normalpaper csxpaper"><br><b>Yi Du</b>*, Hanxue Wang, Wenjuan Cui, Hengshu Zhu, Yunchang Guo, Fayaz Ali Dharejo, Yuanchun Zhou, <a href="https://doi.org/10.2196/29433"><b>Foodborne Disease Risk Prediction using Multi-Graph Structural LSTM: Algorithm Design and Validation Study</b></a>, JMIR Medical Informatics, 9(8):e29433, 2021. (SCI IF:2.58)<br></span>
+
+                    <span class="normalpaper mpaper"><br>王卫军, 姚畅, 乔子越, 崔文娟, <b>杜一</b>*, 周园春,<a href=""><b>基于词嵌入的国家自然科学基金学科交叉知识发现方法——以“人工智能”与“信息管理”为例</b></a>, 情报学报, 40(8):831-845, 2021.（FMS T1) <br></span>
+
+                    <span class="oldpaper normalpaper cspaper"><br>王毅蒙, 田野, 孙善鹏, 周园春, <b>杜一</b>,<a href="http://www.c-s-a.org.cn/csa/article/pdf/7931"><b>基于 ORCID 和加权跨层边聚类系数的研究者社区发现</b></a>, 计算机系统应用, 30(6):45-53, 2021.（CCF中文C类) <br></span>
+
+                    <span class="normalpaper csxpaper"><br>Peng Zhang, Wenjuan Cui, Hanxue Wang, Yuanchun Zhou, <b>Yi Du</b>* ,<a href="https://www.liebertpub.com/doi/10.1089/fpd.2020.2913"><b>High-efficiency Machine Learning Method for Identifying Foodborne Disease Outbreaks and Confounding Factors</b></a>, Foodborne Pathogens and Disease, 18(8):590-598, 2021. (SCI IF:2.6, JCR Q2) <br></span>
+
+                    <span class="normalpaper cspaper"><br>Farah Deeba, Yuanchun Zhou, Fayaz Ali Dharejo, <b>Yi Du</b>, Xuezhi Wang*, She Kun ,<a href="https://link.springer.com/article/10.1007/s11277-021-08460-w"><b>Multi-scale Single Image Super-Resolution with Remote-Sensing Application Using Transferred Wide Residual Network</b></a>, Wireless Personal Communications, 120:323–342, 2021. (SCI IF:1.07) <br></span>
+
+                    <span class="normalpaper cspaper"><br>Fayaz Ali Dharejo, Farah Deeba, Yuanchun Zhou*, Das Bhagwan, Jatoi, Munsif Ali, Zawish Muhammad, <b>Yi Du</b>*, Xuezhi Wang,<a href=""><b>Single Image Remote Sensing Super-Resolution Combined with the Transferred Generative Adversarial Network and Wavelet Transformation</b></a>, ACM Transactions on Intelligent Systems and Technology, 2021. (CCF Rank B) <br></span>
+
+                    <span class="normalpaper cspaper"><br>Fayaz Ali Dharejo, Yuanchun Zhou, Farah Deeba*, Munsif Ali Jatoi, Muhammad Ashfaq Khan, Ghulam Ali Mallah, Abdul Ghaffar, Muhammad Chhattal, <b>Yi Du</b>, Xuezhi Wang*,<a href="https://doi.org/10.1016/j.ijleo.2021.166462"><b>A deep hybrid neural network for single image dehazing via wavelet transform</b></a>, Optik,231:166462, 2021. (SCI IF:2.2, JCR Q2) <br></span>
+
+                    <span class="normalpaper cspaper"><br>Farah Deeba, Yuanchun Zhou, Fayaz Ali Dharejo*, Muhammad Ashfaq Khan, Bhagwan Das, Xuezhi Wang*, <b>Yi Du</b>,<a href="https://doi.org/10.1049/ipr2.12136"><b>A Plexus-Convolutional Neural Network Framework for Fast Remote Sensing Image Super-Resolution in wavelet Domain</b></a>, IET Image Processing,15(8):1679-1687,2021. (SCI IF:2.0) <br></span>
+
+                    <span class="normalpaper csxpaper"><br>Hanxue Wang, Wenjuan Cui, Yunchang Guo, <b>Yi Du</b>*, Yuanchun Zhou,<a href="http://dx.doi.org/10.2196/24924"><b>Prediction of Foodborne Diseases Pathogens: A Machine Learning Approach</b></a>, JMIR Medical Informatics,9(1):e24924, 2020. (SCI IF:2.58)<br></span>
+
+                    <span class="normalpaper csxpaper"><br>王寒雪,崔文娟,周园春,<b>杜一</b>,<a href="http://manu44.magtech.com.cn/Jwk_infotech_wk3/CN/10.11925/infotech.2096-3467.2020.1105"><b> 一种基于机器学习的食源性疾病致病菌识别方法</b></a>, 数据分析与知识发现,2020. (CCF中文C类,FMS T2)<br></span>
+
+                    <span class="normalpaper cspaper"><br>Fayaz Ali Dharejo, Yuanchun Zhou, Farah Deeba, Munsif Ali Jatoi, <b>Yi Du</b>, Xuezhi Wang,<a href="https://onlinelibrary.wiley.com/doi/10.1049/ipr2.12004?fbclid=IwAR24NCMnx3WsBWrWfS5I3ND06XaIHc2P-ww-VtzLoNOHT_Bdzmzs6R--eHA"><b> A remote‐sensing image enhancement algorithm based on patch‐wise dark channel prior and histogram equalisation with colour correction</b></a>, IET Image Processing, 15(1):47-56, 2020. (SCI IF:2.0) <br></span>
+
+                    <span class="oldpaper normalpaper cspaper"><br>王永胜,冯伟华,郑新章,刘亚丽,贾楠,王锐,宗国浩,王迪,<b>杜一</b>,<a href=""><b> 烟草科技知识图谱服务平台的设计与实现</b></a>, 计算机应用与软件(已录用),2020. <br></span>
+
+                    <span class="normalpaper cspaper"><br>朱小杰, 赵子豪, <b>杜一</b>*<a href="http://www.joca.cn/CN/abstract/abstract24082.shtml"><b> 模型驱动的大数据流水线框架PiFlow</b></a>, 计算机应用, 40(6):1638-1647, 2020. (CCF T2)<br></span>
+
+                    <span class="classicpaper cspaper"><br>周园春,王卫军,乔子越,肖濛,<b>杜一</b>*,<a href="http://scis.scichina.com/cn/2020/SSI-2019-0271.pdf"><b> 科技大数据知识图谱构建方法及应用研究综述</b></a>, 中国科学 信息科学, 50(7):957-987, 2020. (CCF T1) <br></span>
+
+                    <span class="classicpaper mpaper"><br>李成赞,黎建辉,沈志宏,<b>杜一</b>,<a href="http://qbxb.istic.ac.cn/CN/abstract/abstract454.shtml"><b> 基于引文网络社区发现的数据推荐研究</b></a>, 情报学报,40(8):879-886, 2021. (FMS T1) <br></span>
+
+                    <span class="normalpaper cspaper"><br>Dharejo Fayaz Ali, Zhou Yuanchun, Deeba Farah, Du Yi,<a href="https://ieeexplore.ieee.org/document/8903294/"><b> A Color Enhancement Scene Estimation Approach for Single Image Haze Removal</b></a>, Geoscience and Remote Sensing Letters,17(9):1613-1617, 2019. (SCI IF:3.5,JCR Q1) <br></span>
+                    
+                    <span class="oldpaper normalpaper cspaper"><br>陈天乐,蒲军,朱小杰,崔文娟,冯伟华,王锐,<b>杜一</b>*,周园春<a href="http://escj.cnic.cn/CN/abstract/abstract13257.shtml"><b> 一种基于层次分割和聚合的大数据流水线任务处理方法</b></a>, 科研信息化技术与应用,10(1):3-11, 2019. <br></span>
+                    
+                    <span class="classicpaper cspaper"><br>周园春, 常青玲, <b>杜一</b>*,<a href="http://www.jfdc.cnic.cn/article/2019/1674-9480/1674-9480-1-1-8.shtml"><b> SKS：一种科技领域大数据知识图谱平台</b></a>, 数据与计算发展前沿（创刊号）, 1(1):8, 2019. <br></span>
+                    
+                    <span class="normalpaper csxpaper"><br>Jianghua Zhao, Xuezhi Wang, Hongqing Song, <b>Yi Du</b>, Wenjuan Cui and Yuanchun Zhou*,<a href="https://www.mdpi.com/2073-4433/10/8/461"><b> Spatiotemporal Trend Analysis of PM2.5 Concentration in China, 1999–2016</b></a>, Atmosphere, 10(8):461, 2019. (SCI)<br></span>
+                    
+                    <span class="normalpaper mpaper"><br>姚畅, 王晓帆, <b>杜一</b>, 张兆田, 李建军, 郝艳妮,<a href="http://www.nsfc.gov.cn/csc/20345/20348/pdf/2019/201901055.pdf"><b> 国家自然科学基金大数据知识管理服务平台总体方案及关键技术研究</b></a>, 中国科学基金,33(1):55-61, 2019.<br></span>
+                    
+                    <span class="classicpaper cspaper"><br>范俊君, 戴国忠, <b>杜一</b>, 刘正捷, 田丰, <a href="http://engine.scichina.com/publisher/scp/journal/SSI/doi/10.1360/N112017-00221?slug=full%20text"><b> 智能时代人机交互的一些思考</b></a>, 中国科学(信息科学), 48(4):361-375, 2018. (CCF T1)<br></span>
+
+                    <span class="classicpaper cspaper"><br><b>Yi Du</b>, Abish Malik, Lianke Zhou, Yuanchun Zhou, <a href="https://ietresearch.onlinelibrary.wiley.com/doi/pdfdirect/10.1049/cje.2018.04.013"><b> A Correlation Visual Analytics System for Air Quality</b></a>, Chinese Journal of Electronics, 27(5):920-926, 2018. (SCI, CCF T1)<br></span>
+                    
+                    <span class="oldpaper classicpaper cspaper"><br><b>Yi Du</b>, Lei Ren, Yuanchun Zhou, Jianhui Li, Feng Tian, Guozhong Dai, <a href="https://dl.acm.org/citation.cfm?id=3234123"><b> Banded Choropleth Map</b></a>, Personal and Ubiquitous Computing, 22(3):503-510, 2017. (SCI, CCF Rank C)<br></span>
+
+                    <span class="oldpaper normalpaper cspaper"><br>吕菲, 田丰, <b>杜一</b>, 陈凯翔, 侯文君, 戴国忠, <a href="http://www.jcad.cn/jcadcms/show.action?code=publish_402880124b362464014b3c4d819803a1&newsid=56423ddb82924a77a801806ba1fc7def"><b>基于真实感层级框架的自然用户界面评估方法研究</b></a>, 计算机辅助设计与图形学学报,29(11):2076-2082, 2017. (CCF T1)<br></span>
+
+                    <span class="oldpaper normalpaper cspaper"><br>Lei Ren, Yongchang Wei, Jin Cui, <b>Yi Du</b>, <a href="http://www.tandfonline.com/doi/full/10.1080/00949655.2017.1299151"><b> A Sliding Window based Multi-stage Clustering and Probabilistic Forecasting Approach for Large Multivariate Time Series Data</b></a>,  Journal of Statistical Computation and Simulation (GSCS), 87(13):2494-2508, 2017. (SCI)<br></span>
+
+                    <span class="oldpaper normalpaper cspaper"><br>Wenjuan Cui, Pengfei Wang, Xin Chen, <b>Yi Du</b>, Danhuai Guo, Yuanchun Zhou, Jianhui Li, <a href="http://www.sciencedirect.com/science/article/pii/S0925231217304010"><b> An Algorithm for Event Detection Based on Social Media Data</b></a>, Neurocomputing,254:53-58, 2017. (SCI, CCF Rank C, JCR Q2)<br></span>
+
+                    <span class="oldpaper classicpaper cspaper"><br><b>Yi Du</b>, Cuixia Ma, Chao Wu, Xiaowei Xu, Yike Guo, Yuanchun Zhou, Jianhui Li, <a href="http://www.mdpi.com/1424-8220/17/1/30/html"><b> A Visual Analytics Approach for Station-based Air Quality Data</b></a>, Sensors (Big Data and Cloud Computing for Sensor Networks),17(1):30, 2017. (SCI, JCR Q2)<br></span>
+
+                    <span class="oldpaper normalpaper cspaper"><br>徐晓伟, <b>杜一</b>, 周园春, <a href="http://www.joca.cn/CN/abstract/abstract20947.shtml"><b> 基于多源出行数据的居民行为模式分析方法</b></a>, 计算机应用, 37(8):2362-2367, 2017.(CCF T2)<br></span>
+
+                    <span class="oldpaper classicpaper cspaper"><br><b>杜一</b>, 郭旦怀, 陈昕, 任磊, 戴国忠, <a href="http://www.jos.org.cn/ch/reader/view_abstract.aspx?flag=1&file_no=4959&journal_id=jos"><b>一种模型驱动的可视化生成系统</b></a>, 软件学报,27(5):1199-1211, 2016. (CCF T1)<br></span>
+
+                    <span class="oldpaper normalpaper cspaper"><br><b>杜一</b>, 田丰, 戴国忠, <a href="http://www.jos.org.cn/ch/reader/view_abstract.aspx?flag=1&file_no=4584&journal_id=jos"><b>E-UIDL用户界面描述语言下的开发方法</b></a>, 软件学报, 26(7):1772-1784, 2015. (CCF T1)<br></span>
+
+                    <span class="oldpaper classicpaper cspaper"><br><b>杜一</b>, 郭旦怀, 周园春, 黎建辉, <a href="doc/2014platform.pdf"><b>一种大规模时空数据处理与可视化框架</b></a>, 计算机研究与发展,  51(s2):10-17, 2015. (CCF T1)<br></span>
+
+                    <span class="oldpaper normalpaper cspaper"><br>任磊, 魏永长, <b>杜一</b>, 戴国忠, <a href="doc/bigdatasmallui.pdf"><b>面向小界面大数据可视化的语义Focus+Context人机交互技术</b></a>, 计算机学报, 38(12):2488-2498, 2015. (CCF T1)<br></span>
+
+                    <span class="oldpaper classicpaper cspaper"><br>任磊, <b>杜一</b>, 马帅, 张小龙, <a href="http://www.jos.org.cn/1000-9825/4645.htm"><b>大数据可视分析综述</b></a>, 软件学报, 25(19):1909-1936, 2014. (CCF T1)<br></span>
+
+                    <span class="oldpaper normalpaper cspaper"><br><b>杜一</b>, 田丰, 马翠霞, 戴国忠, <b>基于多尺度描述方法的移动用户界面生成框架</b>, 计算机学报. 36(11):2179-2190, 2013. (CCF T1)<br></span>
+
+                    <span class="oldpaper normalpaper cspaper"><br><b>杜一</b>, 任磊, <b>DaisyVA:支持信息多面体可视分析的智能交互式可视化平台</b>, 计算机辅助设计与图形学学报, 25(8):1177-1182, 2013. (CCF T1)<br></span>
+
+                    <span class="oldpaper classicpaper cspaper"><br><b>杜一</b>, 邓昌智, 田丰, 戴国忠, <a href="http://www.jos.org.cn/ch/reader/view_abstract.aspx?flag=1&file_no=4321&journal_id=jos"><b>一种可扩展的用户界面描述语言</b></a>, 软件学报, 24(5):1127-1142, 2013. (CCF T1)<br></span>
+
+                    <span class="oldpaper normalpaper cspaper"><br><b>杜一</b>, 吕菲, 田丰, 侯文君, 马翠霞, 戴国忠, <a href="http://www.jos.org.cn/ch/reader/view_abstract.aspx?flag=1&file_no=13021&journal_id=jos"><b>一种支持超视频创建与可视呈现的草图界面技术</b></a>, 软件学报, 24(s2):32-41, 2013. (CCF T1)<br></span>
+
+                    <span class="oldpaper normalpaper cspaper"><br><b>杜一</b>, 田丰, 王锋, 戴国忠, 王宏安, <a href="http://www.jos.org.cn/ch/reader/view_abstract.aspx?flag=1&file_no=11032&journal_id=jos"><b>一种移动环境下的用户模型</b></a>, 软件学报, 22(s1):120-128, 2011. (CCF T1)<br></span>
+
+                    <span class="oldpaper normalpaper cspaper"><br><b>Yi Du</b>, Cuixia Ma, Dongxing Teng,Guozhong Dai, <a href="doc/CONCEPT-SKETCH_2010.pdf"><b>CONCEPT-SKETCH: A Tool for Cooperative Visual Analytics</b></a>, International Journal of Advanced Intelligence (IJAI), vol. 3, no. 1:95-113, 2011.<br></span>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200px" style="padding-top: 30px;"><b>会议论文／海报张贴</b></td>
+                    <td>
+                    <span class="normalpaper cspaper"><br>Xueqing Chen, Jian Xu, Ludi Wang, Yang Gao, Huihan Zhu, Yuanchun Zhou, Yi Du*, Cheng-Lin Liu*.<a href="https://openreview.net/forum?id=tCFYwPdmT4"><b> CatalystBench: A Comprehensive Multi-Task Benchmark for Advancing Language Models in Catalysis Science</b></a>,The Fourteenth International Conference on Learning Representations (ICLR 2026). <br></span>
+                    
+                    <span class="normalpaper cspaper"><br>Hao Dong, Ziyue Qiao, Zhiyuan Ning, Qi Hao, Yi Du, Pengyang Wang*, Yuanchun Zhou.<a href="https://aclanthology.org/events/acl-2025"><b> Disentangled Multi-span Evolutionary Network against Temporal Knowledge Graph Reasoning</b></a>,The 61st Annual Meeting of the Association for Computational Linguistics(ACL 2025 Findings). (CCF Rank A)<br></span>
+
+                    <span class="normalpaper cspaper"><br>Ludi Wang, Dongze Song, Qiang Cui, Xueqing Chen, Yuanchun Zhou, Wenjuan Cui*, <b>Yi Du</b>*.<a href="https://www2025.thewebconf.org/"><b> AutoDive+: An Adaptive Model Enhanced Multimodal Online Annotation Tool</b></a>,Proceedings of the ACM Web Conference 2025（WWW 2025 Demo Track）. (CCF Rank A）<br></span>
+
+                    <span class="normalpaper cspaper"><br>Mengyi Huang, Meng Xiao, Ludi Wang, <b>Yi Du</b>*.<a href="https://lrec-coling-2024.org/"><b> DP-CRE: Continual Relation Extraction via Decoupled Contrastive Learning and Memory Structure Preservation</b></a>, The 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024). (CCF Rank B）<br></span>
+
+                    <span class="normalpaper cspaper"><br>Shipeng Guo, Kunpeng Liu, Pengfei Wang, Wenjuan Cui*, Weiwei Dai, <b>Yi Du</b>, Yuanchun Zhou.<a href="https://www.cloud-conf.net/icdm2023/"><b> RDKG: A Reinforcement Learning Framework for Disease Diagnosis on Knowledge Graph</b></a>, 23st IEEE International Conference on Data Mining (ICDM 2023). (CCF Rank B）<br></span>
+
+                    <span class="normalpaper cspaper"><br><b>Yi Du</b>*, Ludi Wang, Mengyi Huang, Dongze Song, Wenjuan Cui, Yuanchun Zhou*.(2023)<a href="https://aclanthology.org/2023.acl-demo.7/"><b> Autodive: An Integrated Onsite Scientific Literature Annotation Tool</b></a>,The 61st Annual Meeting of the Association for Computational Linguistics(ACL 2023 demo track). (CCF Rank A)<br></span>
+                    <span class="normalpaper cspaper"><br>Xu Ye, Meng Xiao, Zhiyuan Ning, Weiwei Dai, Wenjuan Cui, <b>Yi Du</b>*, Yuanchun Zhou.(2023)<a href="https://www.siam.org/conferences/cm/program/accepted-papers/sdm23-accepted-papers"><b> NEEDED: Introducing Hierarchical Transformer to Eye Diseases Diagnosis</b></a>, SIAM International Conference on Data Mining（SDM23）. (CCF Rank B)<br></span>
+
+                    <span class="normalpaper cspaper"><br>Chenye Song, Ludi Wang*, <b>Yi Du</b>, Xiao Xu, Shengming Guo, Xiaoyuan He, Lin Wu.(2022)<a href="http://www.cnsim.org.cn/cass-sim/cn/"><b> A Knowledge Graph Based Approach to Operational Coordination Recognition in Wargame</b></a>, 第三十四届中国仿真大会会议暨第二十一届亚洲仿真会议（2022）.<br></span>
+
+                    <span class="normalpaper cspaper"><br>Meng Xiao, Ziyue Qiao, Yanjie Fu, <b>Yi Du</b>*, Pengyang Wang, and Yuanchun Zhou. (2021)<a href="https://icdm2021.auckland.ac.nz/"><b> Expert Knowledge-Guided Length-Variant Hierarchical Label Generation for Proposal Classification</b></a>, 21st IEEE International Conference on Data Mining (ICDM 2021). (CCF Rank B）<br></span>
+
+                    <span class="normalpaper cspaper"><br>Kaichun Yao, Chuan Qin, Hengshu Zhu, Chao Ma, Jingshuai Zhang, <b>Yi Du</b>, Hui Xiong. (2021)<a href="https://www.cikm2021.org/accepted-papers/full"><b> An Interactive Neurual Network Approach to Keyphrase Extraction in Talent Recruitment</b></a>, 30th ACM International Conference on Information and Knowledge Management (CIKM 2021). (CCF Rank B）<br></span>
+
+                    <span class="normalpaper cspaper"><br>Zhengzheng Tang, Ziyue Qiao, Xuehai Hong, Yang Wang, Fayaz Ali Dharejo, Yuanchun Zhou, <b>Yi Du</b>. (2021)<a href="https://link.springer.com/content/pdf/10.1007%2F978-3-030-85899-5_3.pdf"><b> Data Augmentation for Graph Convolutional Network on Semi-Supervised Classification</b></a>, The 5th Asia Pacific Web (APWeb) and Web-Age Information Management (WAIM) Joint International Conference on Web and Big Data (APWeb-WAIM). (CCF Rank C）<br></span>
+
+                    <span class="normalpaper cspaper"><br>Zhiyuan Ning, Ziyue Qiao, Hao Dong, <b>Yi Du</b>*, Yuanchun Zhou. (2021)<a href=""><b> LightCAKE: A Lightweight Framework for Context-Aware Knowledge Graph Embedding</b></a>, The 25th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD-2021),2021. (CCF Rank C）<br></span>
+                    
+                    <span class="classicpaper cspaper"><br>Ziyue Qiao, Pengyang Wang, Yanjie Fu, <b>Yi Du</b>*, Pengfei Wang, Yuanchun Zhou. (2020) <a href="http://icdm2020.bigke.org/"><b> Tree Structure-Aware Graph Representation Learning via Integrated Hierarchical Aggregation and Relational Metric Learning</b></a>, The 20th IEEE International Conference on Data Mining (ICDM),2020. （CCF Rank B）<br></span>
+                    
+                    <span class="classicpaper cspaper"><br>Ziyue Qiao, <b>Yi Du</b>*, Yanjie Fu, Pengfei Wang, Yuanchun Zhou. (2019) <a href="http://bigdataieee.org/"><b> Unsupervised Author Disambiguation using Heterogeneous Graph Convolutional Network Embedding</b></a>, IEEE International Conference on Big Data,2019. （CCF Rank C）<br></span>
+                    
+                    <span class="classicpaper cspaper"><br><b>Yi Du</b>, Jia Li, Yuanchun Zhou <a href="http://hhme.ccf.org.cn/"><b> Controlled Experiment of Banded Choropleth Map</b></a>, HHME,2018 .<br></span>
+                    
+                    <span class="oldpaper normalpaper cspaper"><br>Wenjuan Cui, <b>Yi Du</b>, Zhihong Shen, Yuanchun Zhou, Jianhui Li. (2017) <a href="doc/microblog_2017"><b>Personalized Microblog Recommendation Using Sentimental Features</b></a>. IEEE International Conference on Big Data and Smart Computing (IEEE BigComp 2017).<br></span>
+
+                    <span class="oldpaper normalpaper cspaper"><br>Fei Lyu, Lei Ren, <b>Yi Du</b> (2017) <a href="https://link.springer.com/chapter/10.1007/978-3-319-61994-1_4"><b>An Optimization Method for User Interface Components Based on Big Data</b></a>. In: Zhang L., Ren L., Kordon F. (eds) Challenges and Opportunity with Big Data. Monterey Workshop 2016. Lecture Notes in Computer Science, vol 10228. Springer, Cham<br></span>
+
+                    <span class="oldpaper normalpaper cspaper"><br><b>Yi Du</b>, Lei Ren, Yuanchun Zhou, Jiahui Li(2017)  <a href="https://link.springer.com/chapter/10.1007/978-3-319-61994-1_2"><b>A Model-Driven Visualization System Based on DVDL</b></a>. In: Zhang L., Ren L., Kordon F. (eds) Challenges and Opportunity with Big Data. Monterey Workshop 2016. Lecture Notes in Computer Science, vol 10228. Springer, Cham<br></span>
+
+                    <span class="oldpaper normalpaper cspaper"><br>Wenjuan Cui, Pengfei Wang, Xin Chen, <b>Yi Du</b>, Danhuai Guo, Yuanchun Zhou, Jianhui Li, <b>How to Use the Social Media Data in Assisting Restaurant Recommendation</b>. In H. Gao, J. Kim & Y. Sakurai (Eds.), Database Systems for Advanced Applications: DASFAA 2016 International Workshops: BDMS, BDQM, MoI, and SeCoP, Dallas, TX, USA, April 16-19, 2016, Proceedings (pp. 134-141). Cham: Springer International Publishing.<br></span>
+
+                    <span class="oldpaper normalpaper cspaper"><br><b>Yi Du</b>, Qianyu Liu, Yuanchun Zhou, Jianhui Li, <b>DVIZ: A Model-driven Visualization Generation System</b> (Poster), in IEEE Symposium on Visual Analytics Science and Technology (VAST) 2015, Chicago, USA, 2015. <a href="videos/dvizvast2015.mp4">preview</a><br></span>
+
+                    <span class="oldpaper normalpaper cspaper"><br>Danhuai Guo, <b>Yi Du</b>,<b>A Visualization Platform for Spario-Temporal Data: a Data Intensive Computation Framework</b>, in the 23rd International conference on Geoinformatics 2015, Wuhan, China, 2015. <br></span>
+                    <span class="oldpaper normalpaper cspaper"><br>Lei Ren,<b>Yi Du</b>, <a href="doc/sketch-fisheyes_2014.pdf"><b>A Sketch+Fisheye Interface for Visual Analytics of Large Time-Series</b></a> (Poster), in IEEE Symposium on Visual Analytics Science and Technology (VAST) 2014, Paris, France, 2014:265-266.<br></span>
+                    <span class="oldpaper normalpaper cspaper"><br>Lei Ren, Jin Cui, <b>Yi Du</b>,Guozhong Dai, <a href="doc/Multilevel_2013.pdf"><b>Multilevel Interaction Model For Hierarchical Tasks In Information Visualization</b></a>,
+                    in The 6th International Symposium on Visual Information Communication and Interaction (VINCI 2013) Tianjin, China, 2013:11-16. （EI）<br></span>
+
+                    <span class="oldpaper classicpaper cspaper"><br>Yingying Jiang, Feng Tian, Guang Li, Xiaolong (Luke) Zhang, <b>Yi Du</b>, Guozhong Dai,Hongan Wang, <b>SpeechTouch: Precise Cursor Positioning on Touch Screen Mobiles</b>,
+                    in 15th International Conference on Human-Computer Interaction with Mobile Devices and Services (MobileHCI 2013), Munich, 2013.（EI）<br></span>
+
+                    <span class="oldpaper normalpaper cspaper"><br><b>Yi Du</b>, Cuixia Ma, Dongxing Teng,Guozhong Dai, <b>Cooperative Concept Map Based on Cognitive Model for Visual Analysis</b>, in The 3rd Visual Information Communication - International Symposium (VINCI 2010), Beijing, China, 2010:76-83.（EI）<br>
+                    <br>Cuixia Ma, <b>Yi Du</b>, Dongxing Teng, Jia Chen, Hongan Wang, Guozhong Dai, <b>An Adaptive Sketching User Interface for Education System in Virtual Reality</b>, in Proceedings 2009 IEEE International Symposium on IT in Medicine and Education (ITME 2009), Jinan, China, 2009:796-802.（EI）<br></span>
+                    <br>
+                    </td>
+                </tr>
+                <!-- <tr class="normalpaper oldpaper ">
+                    <td width="200px" style="padding-top: 30px;"><b>学位论文</b></td>
+                    <td>
+                       <br> <b>杜一</b>, <b>E-UIDL: collaborator</b>, 博士学位论文, 中国科学院, 中国, 2013<br>
+                        <br><b>杜一</b>, <b>笔式图形编辑框架的研究与应用</b>, 学士学位论文, 山东大学, 中国, 2008.<br>
+                        <br>
+                    </td>
+                </tr> -->
+                <tr>
+                    <td width="200px" style="padding-top: 30px;" id="patent"><b>专利</b></td>
+                    <td>
+                        <br>中国专利：<b>一种基于动态偏好学习的交互式多目标贝叶斯优化方法及系统.(初审)</b> 完成人：马雨婕,王露笛,崔文娟,杜一. 申请号：2025111387336<br>
+                        <br>中国专利：<b>基于对比学习的篇章级预训练科学文献表示及查询方法.(实审)</b> 完成人：陈鸣,王露笛,杜一,宋东泽,崔文娟. 申请号：202510290906X<br>
+                        <br>中国专利：<b>一种基于知识图谱的微生物合成纳米材料推荐方法.(已授权)</b> 完成人：王露笛,刘宇峰,宁致远,崔文娟,杜义华,<b>杜一</b>,周园春. 申请号：2024115344890<br>
+                        <br>中国专利：<b>一种基于深度学习的多模态标注方法.(已授权)</b> 完成人：崔强,宋东泽,王露笛,崔文娟,<b>杜一</b>. 申请号：CN202411157253.X<br>
+                        <br>中国专利：<b>一种C02催化领域的多层次、广类别命名实体识别方法.(实审)</b> 完成人：<b>杜一</b>,陈雪青,王露笛,崔文娟,周园春. 申请号：CN2024116458051<br>
+                        <br>中国专利：<b>基于知识图谱增强的自动可解释性疾病自动诊断装置.(申请)</b> 完成人：崔文娟,郭仕鹏,王鹏飞,<b>杜一</b>,周园春. 申请号：CN202211687077.1<br>
+                        <br>中国专利：<b>一种PDF文档智能标注与抽取方法.(已授权)</b> 完成人：王露笛,黄梦依,宋东泽,崔文娟,<b>杜一</b>. 申请号：2023100169451<br>
+                        <br>中国专利：<b>基于电子病历的眼科疾病信息提取方法和辅助诊断装置.(申请)</b> 完成人：崔文娟,叶旭,<b>杜一</b>. 申请号：2022113126178<br>
+                        <br>中国专利：<b>一种基于LightGBM分类与表示学习的姓名消歧方法和系统.(已授权)</b> 完成人：董昊,宁致远,<b>杜一</b>,周园春. 申请号：2021111535240<br>
+                        <br>中国专利：<b>一种基于链接预测的食源性疾病暴发识别方法和系统.(已授权)</b> 完成人：张鹏,叶旭,崔文娟,<b>杜一</b>. 申请号：202210029619.X<br>
+                        <br>中国专利：<b>一种可利用专家知识的申请书多标签层次分类方法.(已授权)</b> 完成人：<b>杜一</b>,肖濛,乔子越,周园春. 申请号：202110866392.X<br>
+                        <br>中国专利：<b>无监督的基于表示学习的同名作者消歧方法及装置.(已授权)</b> 完成人：<b>杜一</b>,董昊,周园春. 申请号：202110240824.6<br>
+                        <br>中国专利：<b>基于融合表征学习的学科分类体系对齐方法、系统及介质.</b> 完成人：<b>杜一</b>,崔文韬,周园春. 申请号：20211019712.6<br>
+                        <br>中国专利：<b>一种基于图局部结构和文本语义相似性的学术论文推荐方法.(已授权)</b> 完成人：<b>杜一</b>,宁致远,乔子越,周园春. 申请号：2020107306901<br>
+                        <br>中国专利：<b>一种基于作者著作树和图神经网络的论文合作者推荐方法.(已授权)</b> 完成人：<b>杜一</b> 乔子越 周园春 宁致远. 申请号：2020107100862<br>
+                        <br>中国专利：<b>一种科技资源汇聚与持续服务方法及装置.(已授权)</b> 完成人：<b>杜一</b> 朱小杰、宋东泽、周园春. 申请号：2020106925798<br>
+                        <!--<br>中国专利：<b>一种学者知识抽取与融合方法及装置.</b> 完成人：<b>杜一</b> 朱小杰 周园春. 申请号：2020106925798<br> 驳回-->
+                        <br>中国专利&PCT专利：<b>一种基于网络表征和语义表征的同名作者消歧方法.(已授权,国际专利已授权)</b> 完成人：<b>杜一</b>,王寒雪,乔子越,周园春. 申请号：2019113223833｜PCT/CN2019/128642<br>
+                        <br>中国专利：<b>一种数据出版物学术影响力评价预测方法.(已授权)</b> 完成人：李成赞,<b>杜一</b>. 申请号：201910749170.2<br>
+                        <!--<br>中国专利：<b>一种基于引文网络社区发现的数据推荐方法.</b> 完成人：李成赞,<b>杜一</b>. 申请号：201910748028.6<br>驳回-->
+                        <br>中国专利：<b>一种基于电路图元素隐喻的主题演化可视化方法.(已授权)</b> 完成人：周连科,王红滨,王念滨,<b>杜一</b>,何鸣,宋奎勇,王瑛琦. 申请号：201610487736.5<br>
+                        <br>中国专利：<b>一种基于深层循环神经网络的卷烟周期需求量预测算法.(已授权)</b> 完成人：王露笛,<b>杜一</b>,周园春. 申请号：2019110945058<br>
+                        <br>中国专利：<b>一种大数据ETL任务的编排方法与系统.(已授权)</b> 完成人：朱小杰, 沈志宏, <b>杜一</b>, 赵子豪, 周园春. 申请号：2019103596584<br>
+                        <br>中国专利：<b>一种大数据ETL任务的调度方法.</b> 完成人：朱小杰，沈志宏，<b>杜一</b>. 申请号：2019107529714 <br>
+                        <br>中国专利：<b>一种基于异质图卷积神经网络嵌入的作者名字消歧方法.(已授权)</b> 完成人： <b>杜一</b>, 乔子越, 周园春. 申请号：2019106357994<br>
+                        <!--<br>中国专利：<b>一种基于异质网络嵌入的学者名字消歧方法.</b> 完成人： <b>杜一</b>, 乔子越, 周园春. 申请号：2018112671819<br>-->
+                        <br>中国专利：<b>一种融合图数据库和人工智能算法的数据管理系统.(已授权)</b> 完成人： 沈志宏, 赵子豪, 周园春, <b>杜一</b>. 申请号：201811212493X<br>
+                        <br>中国专利：<b>一种混合型航标报警智能检测方法.(已授权)</b> 完成人： 陶永, 陈金柱, 邓仕戈, <b>杜一</b>, 沈志宏, 吴章生. 申请号：2017103839799 <br>
+                        <br>中国专利：<b>一种支持时序特征探查的统计地图绘制方法.(已授权)</b> 完成人： <b>杜一</b>, 周园春, 黎建辉. 申请号：201610753059.7<br>
+                        <br>中国专利：<b>一种时空延迟相关性可视化方法.(已授权)</b> 完成人： <b>杜一</b>, 周园春, 黎建辉. 申请号：201610694753.6<br>
+                        <br>中国专利：<b>一种基于主题流的时空延迟相关性可视化方法.(已授权)</b> 完成人： <b>杜一</b>, 周园春, 黎建辉. 申请号：201610640243.0<br>
+                        <br>中国专利：<b>一种基于气象数据的监测指标时空延迟相关性计算方法.(已授权)</b> 完成人： <b>杜一</b>, 崔文娟, 周园春, 黎建辉. 申请号：2016104650296<br>
+                        <br>中国专利：<b>一种基于访问热度的时空数据服务调度方法.(已授权)</b> 完成人： 郭旦怀, <b>杜一</b>, 周园春, 黎建辉. 申请号：2014108485284<br>
+                        <br>中国专利：<b>一种基于WEB的多模型数据可视化开发方法及平台.(已授权)</b> 完成人：<b>杜一</b>, 郭旦怀, 周园春, 黎建辉. 申请号：2014108493971<br>
+                        <br>中国专利：<b>一种交互式空间场景检索方法. (已授权)</b> 完成人： 郭旦怀, <b>杜一</b>, 周园春, 黎建辉. 申请号：201310682924X<br>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200px" style="padding-top: 30px;"><b>图书章节</b></td>
+                    <td>
+                        <br> 中国科学院计算机网络信息中心组编,孙德刚等编著 <b>人工智能关键技术与应用实践</b>. 科学出版社, 2025. 第4章<br>
+                        <br> 周园春,吴俊杰,钱力,杜一,刘冠男 <b>创新方法新系统</b>. 科学出版社, 2022.<br>
+                        <br> 刘勇,杜一, <b>网络数据可视化与分析利器:Gephi中文教程</b>. 电子工业出版社, 2017.<br>
+                        <br> 戴国忠,田丰, <b>笔式用户界面 (第二版)</b>. 中国科技大学出版社, 2014. 第6章、第7章.<br>
+                        <br>
+                    </td>
+                </tr>
+
+                <tr id = "standard">
+                    <td width="200px" style="padding-top: 30px;"><b>参与标准</b></td>
+                    <td>
+                        <br><a href = "https://www.cssn.net.cn/cssn/productDetail/20ce00ab7f210a174da47d7fed76e94f">自动化系统与集成 离散制造企业数据空间集成模型</a> 国家标准, GB/T 44063-2024, 2024.05.<br>
+                        <br><a href = "">IEEE Recommended Practice for the Application of Knowledge Graphs for Talent Services</a> IEEE标准, 3154-2024, 2024.<br>
+                        <br><a href = "">“面向行业的大规模预训练模型技术和应用评估方法”第九部分：招聘大模型</a> 团体标准, AIIA/PG 0113, 2023.<br>
+                        <br><a href = "">Guide for Scientific Knowledge Graphs</a> IEEE标准, P2807.4, 2021.<br>
+                        <br><a href = "">工业互联网平台 工业知识图谱构建技术要求</a> 团体标准, T/CCSA 277-2019, 2019.12.<br>
+                    </td>
+                </tr>
+
+                <tr id = "teach">
+                  <td width="200px" style="padding-top: 30px;"><b>教学活动</b></td>
+                  <td>
+                    <br><a href = "http://www.dviz.cn/251M6021H_iva">交互式可视分析</a>,中国科学院大学，2019年春季学期<br>
+                  </td>
+              </tr>
+
+              <tr id = "social">
+                  <td width="200px" style="padding-top: 30px;"><b>社会兼职</b></td>
+                  <td>
+                      <br><a href = ".">北京市数据标准化技术委员会</a>委员（2025-2029）<br>
+                      <br><a href = "https://iopscience.iop.org/journal/3050-287X">AI for Science </a>青年编委（2025-）<br>
+                      <br><a href = ".">财政部财政大数据应用人才库 </a>专家（2025-）<br>
+                      <br><a href = "https://www.nature.com/sdata/editorial-board">Scientific Data</a>编委(Editorial Board Member)<br>
+                      <br><a href = "https://xplorestaging.ieee.org/xpl/RecentIssue.jsp?punumber=9984155">IEEE Transactions on Industrial Cyber-Physical Systems</a>副编辑(Associate Editor)<br>
+                      <br><a href = "https://ieeexplore-qa.ieee.org/xpl/RecentIssue.jsp?punumber=3516">IEEE/ASME Transactions on Mechatronics</a>技术编辑(Technical Editor,2024.10-2027.10)<br>
+                      <br><a href = "https://www.sciencedirect.com/journal/neurocomputing">Neurocomputing</a>副编辑(Associate Editor)<br>
+                      <br><a href = "http://www.caai.cn/">中国人工智能学会</a>会员<br>
+                      <br><a href="http://www.yicas.cn/portal.php">中国科学院青年创新促进会</a>会员,第七届理事会理事(2024-2025),北京分会委员(2022-2023),信管分会委员(2023-2024)<br>
+                      <br><a href = "https://www.ccf.org.cn/tc/zwmd/dsjzjwyh/">中国计算机学会(CCF)大数据专家委员会</a>执行委员<br>
+                      <br><a href = "http://www.jgdw.cas.cn/tzgz/lyh/">中国科学院留学人员联谊会（中国科学院欧美同学会）</a>会员<br>
+                      <br><a href = "http://www.cqap.cn/">中国医药质量管理协会临床试验及大数据质量管理分会</a>委员<br>
+                      <br><a href = "http://www.ccf.org.cn/tc/zwmd/rjjh/">中国计算机学会(CCF)人机交互专业委员会</a>委员<br>
+                      <br><a href = "http://www.csf-sim.org.cn/">中国仿真学会国际交流工作委员会</a>委员<br>
+                      <br><a href = "">中华医学会消化内镜学分会大数据协作组</a>委员<br>
+                      <br><a href = "http://csig.org.cn/">中国图象图形学学会(CSIG)可视化与可视分析专委会</a>委员<br>
+                      <br><a href = "http://www.isc.org.cn/">中国互联网协会</a>青年专家 （2017-2020）<br>
+                      <br><a href = "http://www.sdyl.gov.cn">山东省青年创新人才协会</a>首届会员、理事<br>
+                      <br><a href = "http://www.gdcomf.com/">广东省计算机学会大数据专业委员会</a>委员<br>
+                      <br>CCF 高级会员、ACM 会员、ACM SIGCHI CHINA Chapter 会员<br>
+                      <br>IJCAI 2021、CCF BigData 2022、《Frontiers of Computer Science》、《软件学报》、《计算机应用》、AAAI 2024、Computer Science Review审稿专家<br>
+                      <br><a href = "http://www.txxb.com.cn/CN/column/item27.shtml">《图学学报》</a>编委<br>
+                      <br> <a href = "http://www.asia-scs-sim2016.org/conference/">ISMC 2016 （The 2016 International Simulation Multi-Conference）</a> PC member<br>
+                      <br> <a href = "">第二十八届、二十九届、三十届、三十一届冯如杯学生学术科技作品竞赛 </a> 评审专家<br>
+                      <br> <a href = "http://chinavis.org">ChinaVis 2016,2018  数据可视分析挑战赛 </a> 评审专家<br>
+                      <br> <a href = "http://chinavis.org">ChinaVis 2020,2022 论文程序委员会 </a> 委员<br>
+                  </td>
+              </tr>
+
+              <tr id = "activity">
+                  <td width="200px" style="padding-top: 30px;"><b>社会活动&学术报告</b></td>
+                  <td>
+                    <br><a href="https://ngdc.cncb.ac.cn/conference/bdf2024">Data-driven AI for Science : Methodological Approaches and Advances (in English)</a>The 9th Big Data Forum for Life and Health Sciences & The 21st Asian Bioinformatics Consortium Symposium,2024年10月<br>
+                    <br><a href=".">“科学数据驱动的AI4Science：方法与应用“</a>,中国人工智能学会第九届全国大数据与社会计算学术会议（CAAI BDSC2024）,2024年8月<br>
+                    <br><a href=".">“科学数据驱动的AI4Science研究“</a>,中国科学院青年创新促进会学术交流专委会青年战略研讨会,2024年6月<br>
+                    <br><a href="slides/202308-stkg.pdf">“科技大数据知识图谱“</a>,中国科学院青年创新促进会信管分会2023年学术年会,2023年8月<br>
+                    <br><a href="https://ai4ssummit.deepmodeling.com/#/agendaDetail?id=16">“面向AI4S的科学数据开放共享思考“</a>,2023科学智能峰会：共建AI4S基础设施——AI4S数据库与知识库分论坛,2023年8月.<a href="slides/202308-ai4ssummit.pdf">报告下载</a><br>
+                    <br><a href="slides/20230411-dcai.pdf">“Data-Centric-AI”助力材料科学</a>,中国科学院青年创新促进会2022年学术年会,2023年4月.<a href="slides/20230411-dcai.pdf">报告下载</a><br>
+                    <br><a href="http://www.nanoctr.cas.cn/">领域知识图谱及在科学领域的应用探讨</a>,国家纳米科学中心(学术报告),2022年3月<br>
+                    <br><a href="http://scst.suda.edu.cn/43/0d/c11203a475917/page.htm">领域知识图谱及在科学领域的应用探讨</a>,苏州大学(学术报告),2022年3月<br>
+                    <br><a href = "">开放科学下的知识管理服务平台</a>,2020年中国开放获取推介周,2020年10月<br>
+                    <br><a href="slides/20200602_scikg.pdf">大数据管理服务平台：技术与实践</a>,”AI助力学术搜索”研讨会,2022年6月<br>
+                    <br><a href="slides/20200430_dkg.pdf">领域知识图谱构建与应用</a>,苏州大学(学术报告),2022年4月<br>
+                    <br><a href="slides/20200102_dkg.pdf">大数据领域知识图谱：项目与技术</a>,线上,2020年1月<br>
+                    <br><a href = "">大数据技术助力企业发展</a>,“青年建功新动能——青年创新人才助力地方行”（临沂站）,2019年11月<br>
+                    <br><a href = "">AI赋能大数据知识管理服务平台建设</a>,中国图书馆学会专业图书馆分会2019年学术年会,2019年9月<br>
+                    <br><a href = "">社会大数据处理、分析及应用</a>,第廿二届网络新技术与应用年会大会报告,2018<br>
+                    <br><a href = "http://www.medmeeting.org/home/program/7240">大数据分析与挖掘在医学研究中的应用</a>,中国消化内镜学年会,大数据临床研究及人工智能联合会场报告,2018<br>
+                    <br><a href = "http://event.31huiyi.com/1391436183/SpeakerDetail/1421140646?speakerId=1421224583">大数据支持的农业科技评价</a>,第二十四届中国计算机农业应用学术研讨会暨智慧牧场论坛,青年学术论坛报告,2018<br>
+                    <br><a href = "http://dc2018.codata.cn/p/static/315/">多源数据融合管理-以基金委大数据为例</a>,中国科学数据大会，分会报告,2018<br>
+                    <br><a href = "">大数据处理技术与应用</a>,面向科研院所和高校科研人员的第四科研范式下的大数据与云计算技术高级研修班,专题报告,2018<br>
+                    <br><a href = "http://biddf2018.medmeeting.org/cn">大数据分析挖掘概述及其在医学研究中的应用示例</a>,中国医药质量管理协会临床试验及大数据质量管理分会2018年度中期会议,专题报告,2018<br>
+                  </td>
+              </tr>
+
+            <tr id="student">
+                <td width="200px" style="padding-top: 30px;"><b>(共同)指导学生</b></td>
+                <td>
+                    <br>马雨捷, 硕士<br>
+                    <br>崔强, 硕士<br>
+                    <br>陈雪青, 硕士（转博）, 国家奖学金<br>
+                    <br>黄梦依, 硕士,《基于增量学习的科技文本标注方法研究》。毕业去向：小红书(北京)<br>
+                    <br>宁致远(共同指导), 博士。毕业去向：西湖大学(博后)<br>
+                    <br>叶旭, 硕士,《基于电子病历的眼科疾病辅助诊断关键技术研究》。毕业去向：京东(北京)<br>
+                    <br>肖濛(共同指导), 博士,《异构文本的层次化主题挖掘与应用》,中国科学院院长特别奖。毕业去向：中国科学院计算机网络信息中心(博后)<br>
+                    <br>张鹏, 硕士,《基于机器学习的食源性疾病暴发识别研究》。毕业去向：美团(上海)<br>
+                    <br>王寒雪, 硕士,《食源性疾病数据分析与挖掘关键技术研究》。毕业去向：工行软开(北京)<br>
+                    <br>乔子越(共同指导), 博士,国家奖学金,院长奖学金,《融合邻域信息的网络表示学习算法研究》。毕业去向：港科大(广州)博士后，大湾区大学助理教授<br>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+</div>
+</div>
+</body>
+</html>
