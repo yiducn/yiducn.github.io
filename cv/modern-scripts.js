@@ -10,72 +10,82 @@ const papersData = {
     journal: [{
         id: 'JOLD-001',
         title: 'MicrobeDiscover: A Knowledge Graph–Enabled AI Framework for Identifying Microbes for Inorganic Nanomaterial Biosynthesis',
-        authors: 'Ludi Wang, Hexing Han, Yufeng Liu, Zhiyuan Ning, Yujie Ma, Haidan Wang, Jinling Xu, Qiansheng Huang, Wenjuan Cui, Yuanchun Zhou, Yang Gao, Bin Wang*, Yi Du*,',
+        authors: 'Ludi Wang, Hexing Han, Yufeng Liu, Zhiyuan Ning, Yujie Ma, Haidan Wang, Jinling Xu, Qiansheng Huang, Wenjuan Cui, Yuanchun Zhou, Yang Gao, Bin Wang*, Yi Du*',
         journal: 'Advanced Science',
-        year: 2026, sort_year: 2026, direction: 'ai-for-science', type: 'journal', meta: '(SCI IF:15.6,JCR Q1,中科院一区Top)', url: ''
+        year: 2026, sort_year: 2026, direction: 'ai-for-science', type: 'journal', meta: '(SCI IF:15.6,JCR Q1,中科院一区Top)',
+        url: 'http://doi.org/10.1002/advs.202520587'
     },
     {
         id: 'JOLD-002',
         title: 'Accelerating materials discovery through active learning: Methods, challenges and opportunities',
-        authors: 'Yujie Ma, Yang Gao, Ludi Wang, Ming Chen, Wenjuan Cui, Bin Wang*, Yi Du*,',
+        authors: 'Yujie Ma, Yang Gao, Ludi Wang, Ming Chen, Wenjuan Cui, Bin Wang*, Yi Du*',
         journal: 'The Innovation Informatics',
-        year: 2025, sort_year: 2025, direction: 'ai-for-science', type: 'journal', meta: '', url: ''
+        year: 2025, sort_year: 2025, direction: 'ai-for-science', type: 'journal', meta: '',
+        url: 'https://doi.org/10.59717/j.xinn-inform.2025.100013'
     },
     {
         id: 'JOLD-003',
         title: 'Preference-Aware Bayesian Optimization for Interactive Decision Making',
-        authors: 'Yujie Ma, Ludi Wang, Wenjuan Cui, Yuanchun Zhou, Yi Du*,',
+        authors: 'Yujie Ma, Ludi Wang, Wenjuan Cui, Yuanchun Zhou, Yi Du*',
         journal: 'IEEE Transactions on Cybernetics',
-        year: 2025, sort_year: 2025, direction: 'ai-for-science', type: 'journal', meta: '(SCI IF:10.5,JCR Q1,中科院一区Top)', url: ''
+        year: 2025, sort_year: 2025, direction: 'ai-for-science', type: 'journal', meta: '(SCI IF:10.5,JCR Q1,中科院一区Top)',
+        url: 'https://doi.org/10.1109/TCYB.2025.3633283'
     },
     {
         id: 'JOLD-004',
         title: 'Integrating machine learning insights in membrane electrode assembly for CO2 electrolysis',
-        authors: 'Jiamin Huang, Haidan Wang, Ludi Wang, Yanhong Chang*, Yang Gao*, Yi Du*, Bin Wang*,',
+        authors: 'Jiamin Huang, Haidan Wang, Ludi Wang, Yanhong Chang*, Yang Gao*, Yi Du*, Bin Wang*',
         journal: 'Advanced Functional Materials',
-        year: 2025, sort_year: 2025, direction: 'ai-for-science', type: 'journal', meta: '(SCI IF:19.4,JCR Q1,中科院一区Top)', url: ''
+        year: 2025, sort_year: 2025, direction: 'ai-for-science', type: 'journal', meta: '(SCI IF:19.4,JCR Q1,中科院一区Top)',
+        url: 'http://doi.org/10.1002/adfm.202518997'
     },
     {
         id: 'JOLD-005',
         title: 'CataLM: empowering catalyst design through large language models',
-        authors: 'Ludi Wang, Xueqing Chen, Yi Du, Yuanchun Zhou, Yang Gao*, Wenjuan Cui*,',
+        authors: 'Ludi Wang, Xueqing Chen, Yi Du, Yuanchun Zhou, Yang Gao*, Wenjuan Cui*',
         journal: 'International Journal of Machine Learning and Cybernetics',
-        year: 2025, sort_year: 2025, direction: 'ai-for-science', type: 'journal', meta: '(SCI IF:2.7, JCR Q3,中科院四区)', url: ''
+        year: 2025, sort_year: 2025, direction: 'ai-for-science', type: 'journal', meta: '(SCI IF:2.7, JCR Q3,中科院四区)',
+        url: 'https://link.springer.com/article/10.1007/s13042-024-02473-0'
     },
     {
         id: 'JOLD-006',
         title: 'Assessing bioartificial organ function: the 3P model framework and its validation',
-        authors: 'Jingmin An, Shuyu Zhang, Juan Wu, Haolin Chen, Guoshi Xu, Yifan Hou, Ruoyu Liu, Na Li, Wenjuan Cui, Xin Li*, Yi Du*, Qi Gu*,',
+        authors: 'Jingmin An, Shuyu Zhang, Juan Wu, Haolin Chen, Guoshi Xu, Yifan Hou, Ruoyu Liu, Na Li, Wenjuan Cui, Xin Li*, Yi Du*, Qi Gu*',
         journal: 'Lab on a Chip',
-        year: 2024, sort_year: 2024, direction: 'ai-for-science', type: 'journal', meta: '(SCI IF:5.8, JCR Q1,中科院二区)', url: ''
+        year: 2024, sort_year: 2024, direction: 'ai-for-science', type: 'journal', meta: '(SCI IF:5.8, JCR Q1,中科院二区)',
+        url: 'https://pubs.rsc.org/en/content/articlelanding/2024/lc/d3lc01020a'
     },
     {
         id: 'JOLD-007',
         title: 'Interdisciplinary Fairness in Imbalanced Research Proposal Topic Inference: A Hierarchical Transformer-based Method with Selective Interpolation',
-        authors: 'Meng Xiao, Min Wu, Ziyue Qiao*, Yanjie Fu, Zhiyuan Ning, Yi Du*, Yuanchun Zhou,',
+        authors: 'Meng Xiao, Min Wu, Ziyue Qiao*, Yanjie Fu, Zhiyuan Ning, Yi Du*, Yuanchun Zhou',
         journal: 'ACM Transactions on Knowledge Discovery from Data',
-        year: 2024, sort_year: 2024, direction: 'knowledge-graph', type: 'journal', meta: '( CCF Rank B, SCI IF:4.0, JCR Q1,中科院三区)', url: ''
+        year: 2024, sort_year: 2024, direction: 'knowledge-graph', type: 'journal', meta: '( CCF Rank B, SCI IF:4.0, JCR Q1,中科院三区)',
+        url: 'https://dl.acm.org/doi/10.1145/3671149'
     },
     {
         id: 'JOLD-008',
         title: 'Automated Taxonomy Alignment via Large Language Models: Bridging the Gap between Knowledge Domains',
-        authors: 'Wentao Cui, Meng Xiao, Ludi Wang, Xuezhi Wang, Yi Du*, Yuanchun Zhou,',
+        authors: 'Wentao Cui, Meng Xiao, Ludi Wang, Xuezhi Wang, Yi Du*, Yuanchun Zhou',
         journal: 'Scientometrics',
-        year: 2024, sort_year: 2024, direction: 'knowledge-graph', type: 'journal', meta: '(Accepted, SCI IF:3.5,JCR Q1, also indexed by SSCI)', url: ''
+        year: 2024, sort_year: 2024, direction: 'knowledge-graph', type: 'journal', meta: '(Accepted, SCI IF:3.5,JCR Q1, also indexed by SSCI)',
+        url: 'https://rdcu.be/dO7ik'
     },
     {
         id: 'JOLD-009',
         title: 'Large language model enhanced corpus of CO2 reduction electrocatalysts and synthesis procedures',
-        authors: 'Xueqing Chen, Yang Gao, Ludi Wang, Wenjuan Cui, Jiamin Huang,Yi Du*, Bin Wang*,',
+        authors: 'Xueqing Chen, Yang Gao, Ludi Wang, Wenjuan Cui, Jiamin Huang,Yi Du*, Bin Wang*',
         journal: 'Scientific Data',
-        year: 2024, sort_year: 2024, direction: 'ai-for-science', type: 'journal', meta: '(SCI IF:8.5,JCR Q1,中科院二区)', url: ''
+        year: 2024, sort_year: 2024, direction: 'ai-for-science', type: 'journal', meta: '(SCI IF:8.5,JCR Q1,中科院二区)',
+        url: 'https://www.nature.com/articles/s41597-024-03180-9'
     },
     {
         id: 'JOLD-010',
         title: 'Manufacturing multi-organs database: A comprehensive, predictive, and analytical biofabrication database',
         authors: 'Jingmin An, Wenjuan Cui, Haolin Chen, Juan Wu, Yishuang Liang, Na Li, Yi Du*, Shuyu Zhang*, Qi Gu*',
         journal: 'International Journal of AI for Materials and Design',
-        year: 2024, sort_year: 2024, direction: 'ai-for-science', type: 'journal', meta: '', url: ''
+        year: 2024, sort_year: 2024, direction: 'ai-for-science', type: 'journal', meta: '', 
+        url: 'https://api-journal.accscience.com/uploads/file/20260227/a14b9debe2b0fd34872cb7d92b953f95.pdf'
     },
     {
         id: 'JOLD-011',
@@ -89,7 +99,8 @@ const papersData = {
         title: 'Revisiting electrocatalyst design by a knowledge graph of Cu-based catalysts for CO2 reduction',
         authors: 'Yang Gao, Ludi Wang, Xueqing Chen, Yi Du*, Bin Wang*,',
         journal: 'ACS Catalysis',
-        year: 2023, sort_year: 2023, direction: 'ai-for-science', type: 'journal', meta: '(SCI IF:13.7,JCR Q1,中科院一区Top)', url: ''
+        year: 2023, sort_year: 2023, direction: 'ai-for-science', type: 'journal', meta: '(SCI IF:13.7,JCR Q1,中科院一区Top)',
+        url: 'https://pubs.acs.org/doi/10.1021/acscatal.3c00759'
     },
     {
         id: 'JOLD-013',
@@ -110,21 +121,24 @@ const papersData = {
         title: 'A corpus of CO2 electrocatalytic reduction process extracted from the scientific literature',
         authors: 'Ludi Wang, Yang Gao, Xueqing Chen, Wenjuan Cui, Yuanchun Zhou,Xinying Luo, Shuaishuai Xu,Yi Du*, Bin Wang*,',
         journal: 'Scientific Data',
-        year: 2023, sort_year: 2023, direction: 'ai-for-science', type: 'journal', meta: '(SCI IF:8.5,JCR Q1,中科院二区)', url: ''
+        year: 2023, sort_year: 2023, direction: 'ai-for-science', type: 'journal', meta: '(SCI IF:8.5,JCR Q1,中科院二区)',
+        url: ''
     },
     {
         id: 'JOLD-016',
         title: 'Hierarchical Interdisciplinary Topic Detection Model for Research Proposal Classification',
         authors: 'Meng Xiao, Ziyue Qiao, Yanjie Fu, Hao Dong, Yi Du*, Pengyang Wang, Hui Xiong, Yuanchun Zhou*,',
         journal: 'IEEE Transactions on Knowledge and Data Engineering',
-        year: 2023, sort_year: 2023, direction: 'knowledge-graph', type: 'journal', meta: '(CCF Rank A，SCI IF:9.6,JCR Q1,中科院一区Top)', url: ''
+        year: 2023, sort_year: 2023, direction: 'knowledge-graph', type: 'journal', meta: '(CCF Rank A，SCI IF:9.6,JCR Q1,中科院一区Top)',
+        url: 'https://ieeexplore.ieee.org/document/10052697/'
     },
     {
         id: 'JOLD-017',
         title: 'A Dual-Channel Semi-Supervised Learning Framework on Graphs via Knowledge Transfer and Meta-Learning',
         authors: 'Ziyue Qiao, Pengyang Wang, Pengfei Wang, Zhiyuan Ning, Yanjie Fu, Yi Du, Yuanchun Zhou*, Jianqiang Hua, Xian-sheng Hua, Hui Xiong*,',
         journal: 'ACM Transactions on the Web',
-        year: 2023, sort_year: 2023, direction: 'knowledge-graph', type: 'journal', meta: '(CCF Rank C，SCI IF:3.6,JCR Q1, 中科院四区)', url: ''
+        year: 2023, sort_year: 2023, direction: 'knowledge-graph', type: 'journal', meta: '(CCF Rank C，SCI IF:3.6,JCR Q1, 中科院四区)',
+        url: ''
     },
     {
         id: 'JOLD-018',
@@ -152,7 +166,8 @@ const papersData = {
         title: 'RPT: Toward Transferable Model on Heterogeneous Researcher Data via Pre-Training',
         authors: 'Ziyue Qiao,Yanjie Fu,Pengyang Wang,Meng Xiao,Zhiyuan Ning,Yi Du*,Yuanchun Zhou,',
         journal: 'IEEE Transactions on Big Data',
-        year: 2022, sort_year: 2022, direction: 'knowledge-graph', type: 'journal', meta: '(CCF Rank C, SCI IF:5.7,JCR Q1, 中科院二区)', url: ''
+        year: 2022, sort_year: 2022, direction: 'knowledge-graph', type: 'journal', meta: '(CCF Rank C, SCI IF:5.7,JCR Q1, 中科院二区)',
+        url: ''
     },
     {
         id: 'JOLD-022',
