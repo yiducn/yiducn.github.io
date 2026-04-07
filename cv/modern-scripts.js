@@ -1398,7 +1398,7 @@ function renderStudents() {
     if (!container) return;
 
     const students = [
-        { name: "马雨捷", level: "硕士", note: "" },
+        { name: "马雨捷", level: "硕士", note: "国家奖学金" },
         { name: "崔强", level: "硕士", note: "" },
         { name: "陈雪青", level: "硕士（转博）", note: "国家奖学金" },
         { name: "黄梦依", level: "硕士", note: "毕业去向：小红书(北京)" },
@@ -1407,7 +1407,7 @@ function renderStudents() {
         { name: "肖濛(共同指导)", level: "博士", note: "中科院院长特别奖，毕业去向：中科院计算机所(博后)" },
         { name: "张鹏", level: "硕士", note: "毕业去向：美团(上海)" },
         { name: "王寒雪", level: "硕士", note: "毕业去向：工行软开(北京)" },
-        { name: "乔子越(共同指导)", level: "博士", note: "国家奖学金，院长奖学金，毕业去向：港科大(广州)博士后" }
+        { name: "乔子越(共同指导)", level: "博士", note: "国家奖学金，院长奖学金，毕业去向：港科大(广州)博士后,大湾区大学助理教授" }
     ];
 
     container.innerHTML = students.map((stu, index) => {
