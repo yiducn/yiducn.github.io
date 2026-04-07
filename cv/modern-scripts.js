@@ -478,6 +478,12 @@ const papersData = {
         year: 2011, sort_year: 2011, direction: 'others', type: 'journal', meta: '', url: ''
     },
     ], conference: [{
+        id: 'COLD-026',
+        title: 'CITE: Benchmarking Heterogeneous Text-Attributed Graph Models',
+        authors: 'Chenghao Zhang, Chenghao_Zhang, Qingqing Long, Ludi Wang, Wenjuan Cui, Jianjun Yu*, Yi Du*.',
+        venue: 'The 64th Annual Meeting of the Association for Computational Linguistics (ACL 2026).',
+        year: 2026, sort_year: 2026, direction: 'ai-for-science', type: 'conference', meta: '(CCF Rank A)', url: 'https://arxiv.org/abs/2508.15392'
+    },{
         id: 'COLD-001',
         title: 'CatalystBench: A Comprehensive Multi-Task Benchmark for Advancing Language Models in Catalysis Science',
         authors: 'Xueqing Chen, Jian Xu, Ludi Wang, Yang Gao, Huihan Zhu, Yuanchun Zhou, Yi Du*, Cheng-Lin Liu*.',
