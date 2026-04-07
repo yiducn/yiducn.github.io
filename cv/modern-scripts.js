@@ -478,6 +478,12 @@ const papersData = {
         year: 2011, sort_year: 2011, direction: 'others', type: 'journal', meta: '', url: ''
     },
     ], conference: [{
+        id: 'COLD-027',
+        title: 'Beyond Paper-to-Paper: Structured Profiling and Rubric Scoring for Paper-Reviewer Matching',
+        authors: 'Yicheng Pan, Zhiyuan Ning, Ludi Wang, Yi Du*.',
+        venue: 'International Joint Conference on Neural Networks (IJCNN 2026).',
+        year: 2026, sort_year: 2026, direction: 'knowledge-graph', type: 'conference', meta: '(CCF Rank C)', url: ''
+    },{
         id: 'COLD-026',
         title: 'CITE: Benchmarking Heterogeneous Text-Attributed Graph Models',
         authors: 'Chenghao Zhang, Chenghao_Zhang, Qingqing Long, Ludi Wang, Wenjuan Cui, Jianjun Yu*, Yi Du*.',
