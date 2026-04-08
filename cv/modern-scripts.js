@@ -477,7 +477,14 @@ const papersData = {
         journal: 'International Journal of Advanced Intelligence (IJAI), vol. 3, no. 1:95-113',
         year: 2011, sort_year: 2011, direction: 'others', type: 'journal', meta: '', url: ''
     },
-    ], conference: [{
+    ], conference: [
+        {
+        id: 'COLD-028',
+        title: 'AlphaEdit+: Model Editing in the Presence of Conflicting and Inconsistent Knowledge',
+        authors: 'Qing Liu, Jianhao Zhang, Ou Wu, Michael Ng, Yi Du.',
+        venue: 'The 64th Annual Meeting of the Association for Computational Linguistics (ACL 2026 Findings).',
+        year: 2026, sort_year: 2026, direction: 'knowledge-graph', type: 'conference', meta: '(CCF Rank A)', url: 'https://openreview.net/forum?id=PsraMmnMqX'
+    },{
         id: 'COLD-027',
         title: 'Beyond Paper-to-Paper: Structured Profiling and Rubric Scoring for Paper-Reviewer Matching',
         authors: 'Yicheng Pan, Zhiyuan Ning, Ludi Wang, Yi Du*.',
@@ -487,7 +494,7 @@ const papersData = {
         id: 'COLD-026',
         title: 'CITE: Benchmarking Heterogeneous Text-Attributed Graph Models',
         authors: 'Chenghao Zhang, Chenghao_Zhang, Qingqing Long, Ludi Wang, Wenjuan Cui, Jianjun Yu*, Yi Du*.',
-        venue: 'The 64th Annual Meeting of the Association for Computational Linguistics (ACL 2026).',
+        venue: 'The 64th Annual Meeting of the Association for Computational Linguistics (ACL 2026 Main).',
         year: 2026, sort_year: 2026, direction: 'ai-for-science', type: 'conference', meta: '(CCF Rank A)', url: 'https://arxiv.org/abs/2508.15392'
     },{
         id: 'COLD-001',
