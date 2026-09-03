@@ -479,6 +479,30 @@ const papersData = {
     },
     ], conference: [
         {
+        id: 'COLD-032',
+        title: 'PreReviewBench: Benchmarking LLMs for Editorial Desk Screening in Scholarly Publishing',
+        authors: 'Ming Chen, Zhiyuan Ning, Yi Du*.',
+        venue: 'The 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP 2026 Main).',
+        year: 2026, sort_year: 2026, direction: 'knowledge-graph', type: 'conference', meta: '(CCF Rank B)', url: 'https://openreview.net/forum?id=r8YJHk9580#discussion'
+    },{
+        id: 'COLD-031',
+        title: 'LLM Fine-tuning with an Unconstrained Fine-tuned Teacher',
+        authors: 'Jianhao Zhang, Jianhao_Zhang, Ou Wu, Yi Du.',
+        venue: 'The 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP 2026 Main).',
+        year: 2026, sort_year: 2026, direction: 'knowledge-graph', type: 'conference', meta: '(CCF Rank B)', url: 'https://openreview.net/forum?id=zNleoa5B0k#discussion'
+    },{
+        id: 'COLD-030',
+        title: 'R2Edit:Mastering Relation Replacement Editing via Target-Smoothed Forgetting and Self-Paced Learning',
+        authors: 'Xu Cao, Xinrui Chen, Qing Liu, Mengyang Li, Ou Wu, Yi Du.',
+        venue: 'The 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP 2026 Main).',
+        year: 2026, sort_year: 2026, direction: 'knowledge-graph', type: 'conference', meta: '(CCF Rank B)', url: 'https://openreview.net/forum?id=BpzjZUf7KQ'
+    },{
+        id: 'COLD-029',
+        title: 'AlphaToken: Decoupling Adaptation and Stability for Path-Aware Response Token Valuation in LLM Post-Training',
+        authors: 'Qing Liu, Ou Wu, Yi Du.',
+        venue: 'The 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP 2026 Main).',
+        year: 2026, sort_year: 2026, direction: 'knowledge-graph', type: 'conference', meta: '(CCF Rank B)', url: 'https://openreview.net/forum?id=nPTRGPnW8v#discussion'
+    },{
         id: 'COLD-028',
         title: 'AlphaEdit+: Model Editing in the Presence of Conflicting and Inconsistent Knowledge',
         authors: 'Qing Liu, Jianhao Zhang, Ou Wu, Michael Ng, Yi Du.',
