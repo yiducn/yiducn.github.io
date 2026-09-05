@@ -700,7 +700,14 @@ const papersData = {
 
 // ============================================
 // 专利数据 - Patents Data
-const patentsData = [{
+const patentsData = [
+    {
+    id: 'POLD-040',
+    title: '一种面向生物医学问题求解的多智能体协同分析方法',
+    inventors: '杜一,张浩文,尹宇航,陈善稳,王鹏远,李芯钰,王露笛',
+    number: '2026106749149',
+    status: 'applied', type: 'china', year: 2026
+},{
     id: 'POLD-001',
     title: '一种基于动态偏好学习的交互式多目标贝叶斯优化方法及系统.(初审) 完成人：马雨婕,王露笛,崔文娟,杜一',
     inventors: '马雨婕,王露笛,崔文娟,杜一',
