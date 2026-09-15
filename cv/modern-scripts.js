@@ -7,7 +7,14 @@
 // 论文数据 - Papers Data
 // ============================================
 const papersData = {
-    journal: [{
+    journal: [
+    {
+        id: 'JOLD-066',
+        title: 'Expert-in-the-Loop Systems for High-Quality Training Data Construction: A Survey',
+        authors: 'Dongze Song,Ludi Wang,Jinling Xu,Yicheng Pan,Bingzhi Chen,Wenjuan Cui,Yi Du *,',
+        journal: ' IEEE Transactions on Systems, Man and Cybernetics: Systems',
+        year: 2026, sort_year: 2026, direction: 'others', type: 'journal', meta: '', url: ''
+    },{
         id: 'JOLD-001',
         title: 'MicrobeDiscover: A Knowledge Graph–Enabled AI Framework for Identifying Microbes for Inorganic Nanomaterial Biosynthesis',
         authors: 'Ludi Wang, Hexing Han, Yufeng Liu, Zhiyuan Ning, Yujie Ma, Haidan Wang, Jinling Xu, Qiansheng Huang, Wenjuan Cui, Yuanchun Zhou, Yang Gao, Bin Wang*, Yi Du*',
