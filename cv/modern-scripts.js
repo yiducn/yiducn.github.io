@@ -709,14 +709,28 @@ const papersData = {
 // 专利数据 - Patents Data
 const patentsData = [
     {
+    id: 'POLD-042',
+    title: '基于大模型反馈强化学习的文献关键词生成方法及装置.(实审) ',
+    inventors: '王鹏飞,李鹏江,周园春,杜甜,许萍,杜一',
+    number: '2026113531603',
+    status: 'applied', type: 'china', year: 2026
+},
+{
+    id: 'POLD-041',
+    title: '一种基于知识图谱的SLC蛋白—疾病关联预测方法.(实审) ',
+    inventors: '杜一,李芯钰,张浩文,王露笛,崔文娟,宋东泽',
+    number: 'CN202511808865.5',
+    status: 'applied', type: 'china', year: 2026
+},
+    {
     id: 'POLD-040',
-    title: '一种面向生物医学问题求解的多智能体协同分析方法',
+    title: '一种面向生物医学问题求解的多智能体协同分析方法.(实审) ',
     inventors: '杜一,张浩文,尹宇航,陈善稳,王鹏远,李芯钰,王露笛',
     number: '2026106749149',
     status: 'applied', type: 'china', year: 2026
 },{
     id: 'POLD-001',
-    title: '一种基于动态偏好学习的交互式多目标贝叶斯优化方法及系统.(初审) 完成人：马雨婕,王露笛,崔文娟,杜一',
+    title: '一种基于动态偏好学习的交互式多目标贝叶斯优化方法及系统.(实审)  完成人：马雨婕,王露笛,崔文娟,杜一',
     inventors: '马雨婕,王露笛,崔文娟,杜一',
     number: '2025111387336',
     status: 'applied', type: 'china', year: 2025
