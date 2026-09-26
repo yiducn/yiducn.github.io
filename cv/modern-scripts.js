@@ -485,7 +485,26 @@ const papersData = {
         year: 2011, sort_year: 2011, direction: 'others', type: 'journal', meta: '', url: ''
     },
     ], conference: [
+    {
+        id: 'COLD-033',
+        title: 'NADS: Navigator-Guided Data Selection for Mitigating Catastrophic Forgetting in Fine-Tuning',
+        authors: 'Jianhao Zhang, Ou Wu, Yi Du.',
+        venue: 'The Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS 2026).',
+        year: 2026, sort_year: 2026, direction: 'knowledge-graph', type: 'conference', meta: '(CCF Rank A)', url: 'https://openreview.net/forum?id=Sw4QjE6Bv2'
+    },{
+        id: 'COLD-034',
+        title: 'DRIVE: Fine-tuning via Data Contribution- and Diversity-aware Weighting with Prior Regularization',
+        authors: 'Qing Liu, Xinrui Chen, Weiyao Zhu, Yi Du, Ou Wu.',
+        venue: 'The Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS 2026).',
+        year: 2026, sort_year: 2026, direction: 'knowledge-graph', type: 'conference', meta: '(CCF Rank A)', url: 'https://openreview.net/forum?id=Sw4QjE6Bv2'
+    },    
         {
+        id: 'COLD-033',
+        title: 'ProSearch: Benchmarking Multi-Constraint Protocol Retrieval in Experimental Science',
+        authors: 'Wenliang Liang, Zhiyuan Ning, Haolin Chen, Yuanchun Zhou, Wenjuan Cui, Yi Du*.',
+        venue: 'The Fortieth Annual Conference on Neural Information Processing Systems Evaluations and Datasets Track (NeurIPS 2026).',
+        year: 2026, sort_year: 2026, direction: 'ai-for-science', type: 'conference', meta: '(CCF Rank A)', url: 'https://openreview.net/forum?id=Sw4QjE6Bv2'
+    },   {
         id: 'COLD-032',
         title: 'PreReviewBench: Benchmarking LLMs for Editorial Desk Screening in Scholarly Publishing',
         authors: 'Ming Chen, Zhiyuan Ning, Yi Du*.',
