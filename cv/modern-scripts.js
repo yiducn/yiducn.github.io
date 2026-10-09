@@ -9,11 +9,17 @@
 const papersData = {
     journal: [
     {
+        id: 'JOLD-067',
+        title: 'Comprehend, Divide, and Conquer: Feature Subspace Exploration via Multi-Agent Hierarchical Reinforcement Learning',
+        authors: 'Weiliang Zhang, Xiaohan Huang, Yi Du, Ziyue Qiao, Qingqing Long, Zhen Meng, Yuanchun Zhou, Meng Xiao,',
+        journal: 'ACM Transactions on Knowledge Discovery from Data',
+        year: 2026, sort_year: 2026, direction: 'others', type: 'journal', meta: '(SCI IF:6.9,JCR Q1)', url: 'https://doi.org/10.1145/3833385'
+    },{
         id: 'JOLD-066',
         title: 'Expert-in-the-Loop Systems for High-Quality Training Data Construction: A Survey',
         authors: 'Dongze Song,Ludi Wang,Jinling Xu,Yicheng Pan,Bingzhi Chen,Wenjuan Cui,Yi Du *,',
         journal: ' IEEE Transactions on Systems, Man and Cybernetics: Systems',
-        year: 2026, sort_year: 2026, direction: 'others', type: 'journal', meta: '', url: ''
+        year: 2026, sort_year: 2026, direction: 'others', type: 'journal', meta: '(SCI IF:8.4,JCR Q1,中科院一区Top)', url: 'https://doi.org/10.1109/TSMC.2026.3734945'
     },{
         id: 'JOLD-001',
         title: 'MicrobeDiscover: A Knowledge Graph–Enabled AI Framework for Identifying Microbes for Inorganic Nanomaterial Biosynthesis',
@@ -486,6 +492,12 @@ const papersData = {
     },
     ], conference: [
     {
+        id: 'COLD-034',
+        title: 'PreSL: Document Level Pre-training of Scientific Literature via Self-supervised Learning',
+        authors: 'Ludi Wang, Ziyue Qiao, Meng Xiao, Ming Chen, Yi Du, Wenjuan Cui, Yuanchun Zhou.',
+        venue: 'CCF Conference on Big Data(2026).',
+        year: 2026, sort_year: 2026, direction: 'knowledge-graph', type: 'conference', meta: '', url: 'https://link.springer.com/chapter/10.1007/978-981-95-8447-5_2'
+    },{
         id: 'COLD-033',
         title: 'NADS: Navigator-Guided Data Selection for Mitigating Catastrophic Forgetting in Fine-Tuning',
         authors: 'Jianhao Zhang, Ou Wu, Yi Du.',
