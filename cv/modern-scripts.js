@@ -8,6 +8,13 @@
 // ============================================
 const papersData = {
     journal: [
+        {
+        id: 'JOLD-068',
+        title: 'Trajectory-Constrained Feature Transformation Optimization Framework for Stable Tabular Data Reprogramming',
+        authors: 'Xiaohan Huang, Dongjie Wang, Zhiyuan Ning, Yanjie Fu, Ziyue Qiao, Qingqing Long, Haowei Zhu, Yi Du, Min Wu, Yuanchun Zhou*, Meng Xiao*,',
+        journal: 'ACM Transactions on Knowledge Discovery from Data',
+        year: 2026, sort_year: 2026, direction: 'others', type: 'journal', meta: '(SCI IF:6.9,JCR Q1)', url: 'https://dl.acm.org/doi/10.1145/3857802'
+    },
     {
         id: 'JOLD-067',
         title: 'Comprehend, Divide, and Conquer: Feature Subspace Exploration via Multi-Agent Hierarchical Reinforcement Learning',
