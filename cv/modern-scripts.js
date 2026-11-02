@@ -9,6 +9,12 @@
 const papersData = {
     journal: [
         {
+        id: 'JOLD-069',
+        title: 'HierDTA: Hierarchical Structure-Aware Representation Learning for Drug–Target Affinity Prediction',
+        authors: 'Huangchao Xu, Baohua Zhang *, Qian Liu, Zhong Jin, Yi Du,',
+        journal: 'ACS Omega',
+        year: 2026, sort_year: 2026, direction: 'others', type: 'journal', meta: '(SCI IF:5.2,JCR Q2)', url: 'https://pubs.acs.org/acsodf/article/doi/10.1021/acsomega.6c07956/5454289/HierDTA-Hierarchical-Structure-Aware'
+    },{
         id: 'JOLD-068',
         title: 'Trajectory-Constrained Feature Transformation Optimization Framework for Stable Tabular Data Reprogramming',
         authors: 'Xiaohan Huang, Dongjie Wang, Zhiyuan Ning, Yanjie Fu, Ziyue Qiao, Qingqing Long, Haowei Zhu, Yi Du, Min Wu, Yuanchun Zhou*, Meng Xiao*,',
@@ -499,6 +505,12 @@ const papersData = {
     },
     ], conference: [
     {
+        id: 'COLD-035',
+        title: 'LightOff-T50: Benchmarking MLLMs for Threshold-Derived Metric Extraction from Scientic Charts',
+        authors: 'Zheng Lv, Cheng Rao, Zeshu Zhang, Yi Du, Yuanchun Zhou, Wenjuan Cui.',
+        venue: '33rd International Conference on Multimedia Modeling (MMM 2027).',
+        year: 2027, sort_year: 2027, direction: 'knowledge-graph', type: 'conference', meta: '', url: '.'
+    },{
         id: 'COLD-034',
         title: 'PreSL: Document Level Pre-training of Scientific Literature via Self-supervised Learning',
         authors: 'Ludi Wang, Ziyue Qiao, Meng Xiao, Ming Chen, Yi Du, Wenjuan Cui, Yuanchun Zhou.',
